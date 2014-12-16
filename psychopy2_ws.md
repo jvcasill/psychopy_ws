@@ -463,7 +463,7 @@ lm(log10(resp.rt) ~ participant, data = df)
 ```
 
 <!-- html table generated in R 3.1.1 by xtable 1.7-4 package -->
-<!-- Mon Dec 15 14:43:06 2014 -->
+<!-- Mon Dec 15 19:15:08 2014 -->
 <table border=1>
 <tr> <th>  </th> <th> Estimate </th> <th> Std. Error </th> <th> t value </th> <th> Pr(&gt;|t|) </th>  </tr>
   <tr> <td align="right"> (Intercept) </td> <td align="right"> 0.0683 </td> <td align="right"> 0.0245 </td> <td align="right"> 2.79 </td> <td align="right"> 0.0057 </td> </tr>
@@ -519,4 +519,6 @@ lm(log10(resp.rt) ~ participant, data = df)
 
 
 [github]: https://github.com/psychopy/psychopy/tree/master/psychopy/demos/builder/mental_rotation
+
+
 
