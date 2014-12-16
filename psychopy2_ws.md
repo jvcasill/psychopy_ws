@@ -10,7 +10,7 @@ widgets     : [mathjax, quiz, bootstrap] # {mathjax, quiz, bootstrap}
 mode        : standalone    # {standalone, draft}
 knit        : slidify::knit2slides
 logo        : ua.png
-biglogo     : ua.png
+biglogo     : psychopy.png
 assets      : {assets: ../../assets}
 ---
 
