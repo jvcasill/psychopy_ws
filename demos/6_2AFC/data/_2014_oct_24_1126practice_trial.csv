@@ -1,0 +1,16 @@
+stimuli,n,key_resp_practice.keys_raw,key_resp_practice.rt_mean,key_resp_practice.rt_raw,key_resp_practice.rt_std,order
+final_0_0.wav,1.0,'left',1.5844540596,1.58445405960083,0.0,1.0
+final_1_10.wav,1.0,'left',0.334115028381,0.33411502838134766,0.0,3.0
+final_2_5.wav,1.0,'left',1.20278215408,1.202782154083252,0.0,6.0
+final_3_6.wav,1.0,'right',0.667860984802,0.6678609848022461,0.0,5.0
+final_7_6.wav,1.0,'right',1.75191783905,1.751917839050293,0.0,7.0
+final_8_5.wav,1.0,'right',0.735762834549,0.7357628345489502,0.0,2.0
+final_9_10.wav,1.0,'right',1.06766796112,1.0676679611206055,0.0,0.0
+final_10_0.wav,1.0,'left',0.933968067169,0.9339680671691895,0.0,4.0
+
+extraInfo
+date,2014_oct_24_1126
+frameRate,59.9654015847
+expName,beat_2AFC
+session,001
+participant,

@@ -1,0 +1,7 @@
+imageFile,maxPumps,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,resp.keys,resp.rt,nPumps,size,earnings,popped,expName,gender (m/f),age,frameRate,session,date,participant,
+,,,,,,space,29.3513319492,,,,,bart,,,60.296168725,004,2014_oct_24_1117,,
+blueBalloon.png,2,0,0,0,0,,,3,0.13,0.0,True,bart,,,60.296168725,004,2014_oct_24_1117,,
+blueBalloon.png,20,0,1,1,3,,,20,0.4,1.0,False,bart,,,60.296168725,004,2014_oct_24_1117,,
+blueBalloon.png,26,0,2,2,4,,,27,0.49,0.0,True,bart,,,60.296168725,004,2014_oct_24_1117,,
+blueBalloon.png,32,0,3,3,5,,,32,0.58,1.6,False,bart,,,60.296168725,004,2014_oct_24_1117,,
+blueBalloon.png,110,0,4,4,18,,,26,0.49,1.3,False,bart,,,60.296168725,004,2014_oct_24_1117,,

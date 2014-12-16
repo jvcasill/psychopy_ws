@@ -1,0 +1,100 @@
+0.2904 	WARNING 	Movie2 stim could not be imported and won't be available
+0.4270 	WARNING 	TextBox stim could not be imported and won't be available.
+0.4270 	WARNING 	TextBox Font Manager Found No Fonts.
+2.3528 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([ 0.,  0.,  0.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor instance at 0xaf4bda0>, name='window1', pos=[-440, -225], screen=0, size=array([1680, 1050]), stereo=False, units=u'norm', useFBO=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+2.3528 	EXP 	window1: recordFrameIntervals = False
+2.5180 	EXP 	window1: recordFrameIntervals = True
+2.6995 	EXP 	window1: recordFrameIntervals = False
+2.7946 	EXP 	Created instructions_text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='instructions_text', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=unicode(...), units=u'norm', win=Window(...), wrapWidth=1)
+2.7983 	EXP 	Created crossPractice = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='red', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.5, italic=False, name='crossPractice', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,    0.,    0.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1)
+2.8062 	EXP 	Set  sound=A
+2.8062 	EXP 	Set Sound  volume=1.000
+2.8258 	EXP 	Created sheep_image = ImageStim(autoLog=True, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sheep1.jpg', interpolate=True, mask=None, maskParams=None, name='sheep_image', opacity=1.0, ori=0.0, pos=array([-0.5,  0.3]), size=array([ 0.5,  0.5]), texRes=128, units=u'norm', win=Window(...))
+2.8418 	EXP 	Created ship_image = ImageStim(autoLog=True, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='ship1.jpg', interpolate=True, mask=None, maskParams=None, name='ship_image', opacity=1.0, ori=0.0, pos=array([ 0.5,  0.3]), size=array([ 0.5,  0.5]), texRes=128, units=u'norm', win=Window(...))
+2.8441 	EXP 	Created practice_left = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='practice_left', opacity=1.0, ori=0, pos=array([-0.5, -0.3]), rgb=array([ 255.,  255.,  255.]), text=u'L', units=u'norm', win=Window(...), wrapWidth=1)
+2.8494 	EXP 	Created practice_right = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='practice_right', opacity=1.0, ori=0, pos=array([ 0.5, -0.3]), rgb=array([ 255.,  255.,  255.]), text=u'R', units=u'norm', win=Window(...), wrapWidth=1)
+2.8534 	EXP 	Created text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+2.8698 	EXP 	Created gotIT = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='gotIT', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=unicode(...), units=u'norm', win=Window(...), wrapWidth=1)
+2.8799 	EXP 	Created break_text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='break_text', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=unicode(...), units=u'norm', win=Window(...), wrapWidth=1)
+2.8820 	EXP 	Created cross_tr = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='red', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.5, italic=False, name='cross_tr', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,    0.,    0.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1)
+2.8855 	EXP 	Set  sound=A
+2.8856 	EXP 	Set Sound  volume=1.000
+2.8973 	EXP 	Created image_sheep = ImageStim(autoLog=True, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sheep.jpg', interpolate=True, mask=None, maskParams=None, name='image_sheep', opacity=1.0, ori=0.0, pos=array([-0.5,  0.3]), size=array([ 0.5,  0.5]), texRes=128, units=u'norm', win=Window(...))
+2.9097 	EXP 	Created image_ship = ImageStim(autoLog=True, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='ship.jpg', interpolate=True, mask=None, maskParams=None, name='image_ship', opacity=1.0, ori=0.0, pos=array([ 0.5,  0.3]), size=array([ 0.5,  0.5]), texRes=128, units=u'norm', win=Window(...))
+2.9120 	EXP 	Created left = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='left', opacity=1.0, ori=0, pos=array([-0.5, -0.3]), rgb=array([ 255.,  255.,  255.]), text=u'L', units=u'norm', win=Window(...), wrapWidth=1)
+2.9140 	EXP 	Created right = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='right', opacity=1.0, ori=0, pos=array([ 0.5, -0.3]), rgb=array([ 255.,  255.,  255.]), text=u'R', units=u'norm', win=Window(...), wrapWidth=1)
+2.9181 	EXP 	Created text_2 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_2', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+2.9272 	EXP 	Created done = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='done', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u"That's it. Thanks you for participating.", units=u'norm', win=Window(...), wrapWidth=1)
+2.9439 	EXP 	instructions_text: autoDraw = True
+3.8101 	DATA 	Keypress: space
+3.8157 	EXP 	Imported practice_trial.xlsx as conditions, 8 conditions, 1 params
+3.8161 	EXP 	Created sequence: random, trialTypes=8, nReps=1, seed=None
+3.8166 	EXP 	New trial (rep=0, index=0): {u'stimuli': u'final_7_6.wav'}
+3.8169 	EXP 	Set  sound=final_7_6.wav
+3.8260 	EXP 	instructions_text: autoDraw = False
+3.8260 	EXP 	crossPractice: autoDraw = True
+4.2240 	EXP 	crossPractice: autoDraw = False
+4.3401 	EXP 	Sound  started
+4.3568 	EXP 	sheep_image: autoDraw = True
+4.3568 	EXP 	ship_image: autoDraw = True
+4.3568 	EXP 	practice_left: autoDraw = True
+4.3568 	EXP 	practice_right: autoDraw = True
+5.2368 	DATA 	Keypress: left
+5.2595 	EXP 	crossPractice: autoDraw = False
+5.2595 	EXP 	sheep_image: autoDraw = False
+5.2595 	EXP 	ship_image: autoDraw = False
+5.2595 	EXP 	practice_left: autoDraw = False
+5.2595 	EXP 	practice_right: autoDraw = False
+5.2595 	EXP 	text: text = '0.897 ...FASTER!'
+5.2595 	EXP 	text: autoDraw = True
+6.2311 	EXP 	New trial (rep=0, index=1): {u'stimuli': u'final_2_5.wav'}
+6.2315 	EXP 	Set  sound=final_2_5.wav
+6.2473 	EXP 	text: autoDraw = False
+6.2473 	EXP 	text: autoDraw = False
+6.2473 	EXP 	crossPractice: autoDraw = True
+6.6448 	EXP 	crossPractice: autoDraw = False
+6.7440 	EXP 	Sound  started
+6.7605 	EXP 	sheep_image: autoDraw = True
+6.7605 	EXP 	ship_image: autoDraw = True
+6.7605 	EXP 	practice_left: autoDraw = True
+6.7605 	EXP 	practice_right: autoDraw = True
+7.2636 	DATA 	Keypress: right
+7.2921 	EXP 	crossPractice: autoDraw = False
+7.2921 	EXP 	sheep_image: autoDraw = False
+7.2921 	EXP 	ship_image: autoDraw = False
+7.2921 	EXP 	practice_left: autoDraw = False
+7.2921 	EXP 	practice_right: autoDraw = False
+7.2921 	EXP 	text: text = '0.520 ...FASTER!'
+7.2921 	EXP 	text: autoDraw = True
+8.2535 	EXP 	New trial (rep=0, index=2): {u'stimuli': u'final_1_10.wav'}
+8.2538 	EXP 	Set  sound=final_1_10.wav
+8.2697 	EXP 	text: autoDraw = False
+8.2697 	EXP 	text: autoDraw = False
+8.2697 	EXP 	crossPractice: autoDraw = True
+8.6512 	DATA 	Keypress: left
+8.6678 	EXP 	crossPractice: autoDraw = False
+8.7674 	EXP 	Sound  started
+8.7839 	EXP 	sheep_image: autoDraw = True
+8.7839 	EXP 	ship_image: autoDraw = True
+8.7839 	EXP 	practice_left: autoDraw = True
+8.7839 	EXP 	practice_right: autoDraw = True
+9.7618 	DATA 	Keypress: left
+9.7770 	EXP 	crossPractice: autoDraw = False
+9.7770 	EXP 	sheep_image: autoDraw = False
+9.7770 	EXP 	ship_image: autoDraw = False
+9.7770 	EXP 	practice_left: autoDraw = False
+9.7770 	EXP 	practice_right: autoDraw = False
+9.7770 	EXP 	text: text = '0.995 ...FASTER!'
+9.7770 	EXP 	text: autoDraw = True
+10.7619 	EXP 	New trial (rep=0, index=3): {u'stimuli': u'final_0_0.wav'}
+10.7640 	EXP 	Set  sound=final_0_0.wav
+10.7821 	EXP 	text: autoDraw = False
+10.7821 	EXP 	text: autoDraw = False
+10.7821 	EXP 	crossPractice: autoDraw = True
+11.1788 	EXP 	crossPractice: autoDraw = False
+11.2633 	EXP 	Sound  started
+11.2776 	EXP 	sheep_image: autoDraw = True
+11.2776 	EXP 	ship_image: autoDraw = True
+11.2776 	EXP 	practice_left: autoDraw = True
+11.2776 	EXP 	practice_right: autoDraw = True
+12.5144 	DATA 	Keypress: escape

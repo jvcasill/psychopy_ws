@@ -1,0 +1,5 @@
+frecuencia_base,resp,estimulo,productividad_afijo,ciclo.thisRepN,ciclo.thisTrialN,ciclo.thisN,ciclo.thisIndex,key_resp_4.keys,key_resp_4.corr,key_resp_4.rt,date,frameRate,expName,participant,
+high,right,rebardición,high,0,0,0,25,left,0,1.51721787453,2014_oct_23_2304,59.9872711488,decision_lexica_visual,,
+low,right,redadío,high,0,1,1,18,left,0,1.16740584373,2014_oct_23_2304,59.9872711488,decision_lexica_visual,,
+high,right,viaseto,high,0,2,2,24,left,0,1.60071086884,2014_oct_23_2304,59.9872711488,decision_lexica_visual,,
+high,left,vetanuco,low,0,3,3,14,right,0,0.567404985428,2014_oct_23_2304,59.9872711488,decision_lexica_visual,,

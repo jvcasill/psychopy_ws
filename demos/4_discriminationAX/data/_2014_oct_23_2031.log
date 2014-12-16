@@ -1,0 +1,34 @@
+0.2984 	WARNING 	Movie2 stim could not be imported and won't be available
+0.4379 	WARNING 	TextBox stim could not be imported and won't be available.
+0.4379 	WARNING 	TextBox Font Manager Found No Fonts.
+3.8821 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([ 1.,  1.,  1.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor instance at 0xc089a30>, name='window1', pos=[0, 0], screen=0, size=array([1440,  900]), stereo=False, units=u'norm', useFBO=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+3.8821 	EXP 	window1: recordFrameIntervals = False
+4.0474 	EXP 	window1: recordFrameIntervals = True
+4.2314 	EXP 	window1: recordFrameIntervals = False
+4.2891 	EXP 	Created text_4 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_4', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 0.,  0.,  0.]), text=u'aqu\xed van las instrucciones', units=u'norm', win=Window(...), wrapWidth=1)
+4.2919 	EXP 	Set  sound=A
+4.2919 	EXP 	Set Sound  volume=1.000
+4.2922 	EXP 	Set  sound=A
+4.2922 	EXP 	Set Sound  volume=1.000
+4.2966 	EXP 	Created text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text', opacity=1.0, ori=0, pos=array([-0.5,  0. ]), rgb=array([ 0.,  0.,  0.]), text=u'iguales', units=u'norm', win=Window(...), wrapWidth=1)
+4.3012 	EXP 	Created text_2 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_2', opacity=1.0, ori=0, pos=array([ 0.5,  0. ]), rgb=array([ 0.,  0.,  0.]), text=u'diferentes', units=u'norm', win=Window(...), wrapWidth=1)
+4.3052 	EXP 	Created text_3 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='red', colorSpace='named', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.2, italic=False, name='text_3', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,    0.,    0.]), text=u'+', units=u'norm', win=Window(...), wrapWidth=1)
+4.3082 	EXP 	Created text_5 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='black', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_5', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 0.,  0.,  0.]), text=u'gracias', units=u'norm', win=Window(...), wrapWidth=1)
+4.3138 	EXP 	text_4: autoDraw = True
+5.5891 	DATA 	Keypress: space
+6.3025 	EXP 	Imported condiciones_bda_discriminacion_AX.csv as conditions, 60 conditions, 3 params
+6.3031 	EXP 	Created sequence: random, trialTypes=60, nReps=2, seed=None
+6.3036 	EXP 	New trial (rep=0, index=0): {'correcto': u'm', 'sonido1': u'bda2.wav', 'sonido2': u'bda2.wav'}
+6.3047 	EXP 	Set  sound=bda2.wav
+6.3049 	EXP 	Set  sound=bda2.wav
+6.3143 	EXP 	text_4: autoDraw = False
+6.3143 	EXP 	text_4: autoDraw = False
+6.3143 	EXP 	text_3: autoDraw = True
+6.5143 	EXP 	text_3: autoDraw = False
+6.5646 	EXP 	Sound  started
+6.5814 	EXP 	text: autoDraw = True
+6.5814 	EXP 	text_2: autoDraw = True
+6.7976 	EXP 	Sound  stopped
+7.3148 	EXP 	Sound  started
+7.5476 	EXP 	Sound  stopped
+8.2660 	DATA 	Keypress: escape
