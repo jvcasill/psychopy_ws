@@ -11,7 +11,7 @@ mode        : standalone    # {standalone, draft}
 knit        : slidify::knit2slides
 logo        : ua.png
 biglogo     : psychopy.png
-assets      : {assets: ./assets}
+assets      : {assets: ../assets}
 ---
 
 ## Goals
@@ -108,7 +108,7 @@ assets      : {assets: ./assets}
 *** =right
 
 <div style="float: right">
-  <img src="./assets/img/cruise.png">
+  <img src="../assets/img/cruise.png">
 </div>
 
 --- &twocol w1:50% w2:50%
@@ -122,14 +122,14 @@ assets      : {assets: ./assets}
 </br> 
 
 <div align="center">
-  <img src="./assets/img/graph.png">    
+  <img src="../assets/img/graph.png">    
 </div>
 
 *** =right
 
 <div style="float: right">
-  <img src="./assets/img/f.png">
-  <img src="./assets/img/fr.png">
+  <img src="../assets/img/f.png">
+  <img src="../assets/img/fr.png">
 </div>
 
 <!-- - The time taken to decide if two images are the same or different depends linearly on the angle of rotation. So the longest time should be at 180 degress, and the expected
@@ -151,9 +151,9 @@ result is a peak-shape graph of RT as a function of rotation angle
 *** =right
 
 <div style="float: right">
-  <img src="./assets/img/sheep1.png">  
+  <img src="../assets/img/sheep1.png">  
   </br>
-  <img src="./assets/img/ship1.png">
+  <img src="../assets/img/ship1.png">
 </div>
 
 ---
@@ -164,7 +164,7 @@ result is a peak-shape graph of RT as a function of rotation angle
 - 11-step duration continuum
 
 <div align="center">
-  <img src="./assets/img/stimuli.png">
+  <img src="../assets/img/stimuli.png">
 </div>
 
 ---
@@ -172,8 +172,8 @@ result is a peak-shape graph of RT as a function of rotation angle
 ## Results
 
 <div align="center">
-  <img src="./assets/img/ne.png">
-  <img src="./assets/img/ll.png">
+  <img src="../assets/img/ne.png">
+  <img src="../assets/img/ll.png">
 </div>
 
 --- .segue bg:grey
@@ -207,7 +207,7 @@ for p in iter_primes():
 *** =right
 
 <div style="float: right">
-  <img src="./assets/img/confundido.png">
+  <img src="../assets/img/confundido.png">
 </div>
 
 ---
@@ -215,7 +215,7 @@ for p in iter_primes():
 ## The interface (Builder mode)
 
 <div style="float: right">
-  <img src="./assets/img/screeny.png">
+  <img src="../assets/img/screeny.png">
 </div>
 
 - Provides a graphical user interface
@@ -233,7 +233,7 @@ for p in iter_primes():
 </br>
 
 <div align="center">
-  <img src="./assets/img/flow.png">
+  <img src="../assets/img/flow.png">
 </div>
 
 ---
@@ -244,7 +244,7 @@ for p in iter_primes():
 - Comprised of a series of components that perform a task
 
 <div align="center">
-  <img src="./assets/img/routines.png">
+  <img src="../assets/img/routines.png">
 </div>
 
 --- &twocol
@@ -263,7 +263,7 @@ for p in iter_primes():
 *** =right
 
 <div style="float: right">
-  <img src="./assets/img/components.png">
+  <img src="../assets/img/components.png">
 </div>
 
 --- .segue bg:grey
@@ -284,7 +284,7 @@ for p in iter_primes():
 ## Stroop task
 
 <div align="center">
-  <img src="./assets/img/stroop.png">
+  <img src="../assets/img/stroop.png">
 </div>
 
 ---
@@ -301,19 +301,19 @@ for p in iter_primes():
 ---
 
 <div align="center">
-  <img src="./assets/img/kb_response1.png">
+  <img src="../assets/img/kb_response1.png">
 </div>
 
 ---
 
 <div align="center">
-  <img src="./assets/img/kb_response2.png">
+  <img src="../assets/img/kb_response2.png">
 </div>
 
 ---
 
 <div align="center">
-  <img src="./assets/img/step1.png">
+  <img src="../assets/img/step1.png">
 </div>
 
 ---
@@ -328,19 +328,19 @@ for p in iter_primes():
 ---
 
 <div align="center">
-  <img src="./assets/img/text_response1.png">
+  <img src="../assets/img/text_response1.png">
 </div>
 
 ---
 
 <div align="center">
-  <img src="./assets/img/text_response2.png">
+  <img src="../assets/img/text_response2.png">
 </div>
 
 ---
 
 <div align="center">
-  <img src="./assets/img/step2.png">
+  <img src="../assets/img/step2.png">
 </div>
 
 ---
@@ -363,8 +363,8 @@ for p in iter_primes():
 </br>
 
 <div align="center">
-  <img src="./assets/img/cf_excel1.png">
-  <img src="./assets/img/cf_texted1.png">
+  <img src="../assets/img/cf_excel1.png">
+  <img src="../assets/img/cf_texted1.png">
 </div>
 
 ---
@@ -372,8 +372,8 @@ for p in iter_primes():
 </br> 
 
 <div align="center">
-  <img src="./assets/img/cf_excel2.png">
-  <img src="./assets/img/cf_texted2.png">
+  <img src="../assets/img/cf_excel2.png">
+  <img src="../assets/img/cf_texted2.png">
 </div>
 
 ---
@@ -392,19 +392,19 @@ for p in iter_primes():
 </br>
 
 <div align="center">
-  <img src="./assets/img/loop1.png">
+  <img src="../assets/img/loop1.png">
 </div>
 
 ---
 
 <div align="center">
-  <img src="./assets/img/loop2.png">
+  <img src="../assets/img/loop2.png">
 </div>
 
 ---
 
 <div align="center">
-  <img src="./assets/img/loop3.png">
+  <img src="../assets/img/loop3.png">
 </div>
 
 ---
@@ -412,7 +412,7 @@ for p in iter_primes():
 ## Stroop task
 
 <div style="float: right">
-  <img src="./assets/img/run.png">
+  <img src="../assets/img/run.png">
 </div>
 
 1. Create a new folder 'stroop' on your desktop
@@ -434,7 +434,7 @@ for p in iter_primes():
 
 ```{r}
 # Combine files vertically into large data frame
-temp <- list.files(path = "./demos/3_stroop/data", 
+temp <- list.files(path = "../demos/3_stroop/data", 
     full.names = TRUE, pattern = ".csv")
 myfiles <- lapply(temp, read.csv,sep = ",")
 df <- do.call("rbind",myfiles)
@@ -495,7 +495,7 @@ print(xtable(mod2), type = 'html')
 </br>
 
 <div align="center">
-  <img width="400" src="./assets/img/clap.gif">
+  <img width="400" src="../assets/img/clap.gif">
 </div>
 
 ---

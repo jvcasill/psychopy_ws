@@ -1,33 +1,20 @@
 ---
-title: "Bilingual research:"
-subtitle: "Perception experiment with PsychoPy2"
-author: "Joseph V. Casillas, PhD"
-date: "Rutgers University </br> 10/26/2017"
-output:
-  xaringan::moon_reader:
-    lib_dir: assets
-    css: "../assets/css/mySlides.css"
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-      ratio: "16:9"
+title       : Using PsychoPy2
+subtitle    : for linguistic research
+author      : Joseph V. Casillas
+job         : PhD Candidate
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax, quiz, bootstrap] # {mathjax, quiz, bootstrap}
+mode        : standalone    # {standalone, draft}
+knit        : slidify::knit2slides
+logo        : ua.png
+biglogo     : psychopy.png
+assets      : {assets: ../assets}
 ---
 
-
-
-
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-```
-
-```{r eval=FALSE, echo=FALSE}
-rmarkdown::render("./hls_2017/index.Rmd")
-xaringan::inf_mr()
-```
-
-
-# Goals
+## Goals
 
 ### Provide an overview of PsychoPy2
 
@@ -45,7 +32,7 @@ xaringan::inf_mr()
 
 ---
 
-# Plan
+## Plan
 
 - Overview of PsychoPy2
 - Demo
@@ -54,21 +41,20 @@ xaringan::inf_mr()
 - Dealing with results
 - Concluding ideas
 
----
-class: inverse, middle, center
+--- .segue bg:grey
 
 # Overview
 
 ---
 
-# What is it?
+## What is it?
 
 - PsychoPy2 is a free program made in Python 
 - It can be used to create experiments in psychology, psychophysics, neuroscience and linguistics.
 
 </br>
 
-# Why do you want it?
+## Why do you want it?
 
 - It's free!
 - It's cross-platform
@@ -76,7 +62,7 @@ class: inverse, middle, center
 
 ---
 
-# What is it good for?
+## What is it good for?
 
 - PsychoPy2 can be used to create psycholinguistic tasks: 
     - 2AFC
@@ -86,13 +72,13 @@ class: inverse, middle, center
 
 </br>
 
-# What is it not good for?
+## What is it not good for?
 
 - ?
 
 ---
 
-# Getting started
+## Getting started
 
 ### Download latest version of PsychoPy2
 
@@ -106,35 +92,30 @@ class: inverse, middle, center
 
 - http://www.jvcasillas.com/teaching/psychopy/
 
----
-class: inverse, middle, center
+--- .segue bg:grey
 
 # Examples
 
----
+--- &twocol w1:40% w2:60%
 
-# Risky business
+## Risky business
 
-.pull-left[
+*** =left
 
 - Balloon Analogue Risk Task (BART) (Lejuez et al., 2002)
 - The measure is designed to quantify individual differences in risk-taking.
 
-]
-
-.pull-right[
+*** =right
 
 <div style="float: right">
   <img src="../assets/img/cruise.png">
 </div>
 
-]
+--- &twocol w1:50% w2:50%
 
----
+## Mental rotation
 
-# Mental rotation
-
-.pull-left[
+*** =left
 
 - Cognitive task related to mental representations of objects (Gray & Pasmanter, 2013)
 
@@ -144,9 +125,7 @@ class: inverse, middle, center
   <img src="../assets/img/graph.png">    
 </div>
 
-]
-
-.pull-right[
+*** =right
 
 <div style="float: right">
   <img src="../assets/img/f.png">
@@ -156,13 +135,12 @@ class: inverse, middle, center
 <!-- - The time taken to decide if two images are the same or different depends linearly on the angle of rotation. So the longest time should be at 180 degress, and the expected
 result is a peak-shape graph of RT as a function of rotation angle 
  -->
-]
 
----
+--- &twocol
 
-# A linguistic experiment
+## A linguistic experiment
 
-.pull-left[
+*** =left
 
 - 2AFC
 - Interested in perception of non-native vowel contrasts
@@ -170,9 +148,7 @@ result is a peak-shape graph of RT as a function of rotation angle
     - Spectrum? Duration?
 - /i/-/ɪ/
 
-]
-
-.pull-right[
+*** =right
 
 <div style="float: right">
   <img src="../assets/img/sheep1.png">  
@@ -180,11 +156,9 @@ result is a peak-shape graph of RT as a function of rotation angle
   <img src="../assets/img/ship1.png">
 </div>
 
-]
-
 ---
 
-# The stimuli
+## The stimuli
 
 - 11-step spectrum continuum
 - 11-step duration continuum
@@ -195,23 +169,22 @@ result is a peak-shape graph of RT as a function of rotation angle
 
 ---
 
-# Results
+## Results
 
 <div align="center">
   <img src="../assets/img/ne.png">
   <img src="../assets/img/ll.png">
 </div>
 
----
-class: inverse, middle, center
+--- .segue bg:grey
 
 # The interface
 
----
+--- &twocolnocenter
 
-# The interface (Coder mode)
+## The interface (Coder mode)
 
-.pull-left[
+*** =left
 
 ```
 import itertools
@@ -231,19 +204,15 @@ for p in iter_primes():
   print p
 ```
 
-]
-
-.pull-right[
+*** =right
 
 <div style="float: right">
   <img src="../assets/img/confundido.png">
 </div>
 
-]
-
 ---
 
-# The interface (Builder mode)
+## The interface (Builder mode)
 
 <div style="float: right">
   <img src="../assets/img/screeny.png">
@@ -255,7 +224,7 @@ for p in iter_primes():
 
 ---
 
-# The interface (Experiment flow)
+## The interface (Experiment flow)
 
 - The experiment advances linearly from left to right
 - Each element (a routine) finishes before advancing
@@ -269,7 +238,7 @@ for p in iter_primes():
 
 ---
 
-# Routines
+## Routines
 
 - Individual view of each 'slide'
 - Comprised of a series of components that perform a task
@@ -278,11 +247,11 @@ for p in iter_primes():
   <img src="../assets/img/routines.png">
 </div>
 
----
+--- &twocol
 
-# Components list
+## Components list
 
-.pull-left[
+*** =left
 
 - Stimuli
     - Text/Audio/Img/Video
@@ -291,24 +260,19 @@ for p in iter_primes():
 - Custom
 	- Python code
 
-]
-
-.pull-right[
+*** =right
 
 <div style="float: right">
   <img src="../assets/img/components.png">
 </div>
 
-]
-
----
-class: inverse, middle, center
+--- .segue bg:grey
 
 # Demo
 
 ---
 
-# How to build your own experiment
+## How to build your own experiment
 
 - Decide what you want to do
 - Find a similar template
@@ -317,7 +281,7 @@ class: inverse, middle, center
 
 ---
 
-# Stroop task
+## Stroop task
 
 <div align="center">
   <img src="../assets/img/stroop.png">
@@ -325,9 +289,9 @@ class: inverse, middle, center
 
 ---
 
-# Stroop task
+## Stroop task
 
-1. Create a new folder 'stroop' on your desktop
+> 1. Create a new folder 'stroop' on your desktop
 2. Launch Pyschopy2
     - Open new builder window 
     - Save new experiment as 'stroop.psyexp' in the 'stroop' folder
@@ -354,7 +318,7 @@ class: inverse, middle, center
 
 ---
 
-# Stroop task
+## Stroop task
 
 1. Create a new folder 'stroop' on your desktop
 2. Launch Pyschopy2/Open new builder window
@@ -381,7 +345,7 @@ class: inverse, middle, center
 
 ---
 
-# Stroop task
+## Stroop task
 
 1. Create a new folder 'stroop' on your desktop
 2. Launch Pyschopy2/Open new builder window
@@ -414,7 +378,7 @@ class: inverse, middle, center
 
 ---
 
-# Stroop task
+## Stroop task
 
 1. Create a new folder 'stroop' on your desktop
 2. Launch Pyschopy2/Open new builder window
@@ -445,7 +409,7 @@ class: inverse, middle, center
 
 ---
 
-# Stroop task
+## Stroop task
 
 <div style="float: right">
   <img src="../assets/img/run.png">
@@ -459,18 +423,17 @@ class: inverse, middle, center
 6. Save condition file in 'stroop' folder, create loop
 7. <blue>Run experiment</blue>
 
---
-
-- You made an awesome experiment, collected data... now what?
+> - You made an awesome experiment, collected data... now what?
 
 ---
 
-# Dealing with results
+## Dealing with results
 
 - Specify the output format
 - Import results directly into stats program
 
-```{r}
+
+```r
 # Combine files vertically into large data frame
 temp <- list.files(path = "../demos/3_stroop/data", 
     full.names = TRUE, pattern = ".csv")
@@ -480,51 +443,60 @@ df <- do.call("rbind",myfiles)
 
 ---
 
-# Plots
+## Plots
 
-```{r, echo=FALSE, fig.align='center', fig.width=11, fig.height=6}
-# plot rt as a function of text
-par(mfrow=c(1,2))
-# get descriptive statistics of subsets of factors
-prop <- aggregate(resp.corr ~ letterColor, data = df, FUN = mean)
-p <- with(prop, barplot(resp.corr, ylim = c(0,1), ylab = "Proportion of correct responses", xlab = "Colors",
-    col=c("red","green", "blue")))
-axis(1, at=p, labels=prop$letterColor)
-with(df, plot(log(resp.rt)~letterColor, ylab = "log(RT)", xlab = "Colors", 
-    col=c("red","green", "blue")))
+
+```
+## Error in eval(predvars, data, env): object 'resp.corr' not found
+```
+
+```
+## Error in eval(predvars, data, env): object 'resp.rt' not found
+```
+
+<img src="assets/fig/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
+
+---
+
+## Plots
+
+
+```
+## Error in eval(predvars, data, env): object 'resp.rt' not found
+```
+
+```
+## Error in plot(participant, log10(resp.rt), ylab = "log10(RT)", xlab = "Trials", : object 'participant' not found
+```
+
+```
+## Error in axis(1, at = c(1:10)): plot.new has not been called yet
+```
+
+```
+## Error in int_abline(a = a, b = b, h = h, v = v, untf = untf, ...): plot.new has not been called yet
 ```
 
 ---
 
-# Plots
+## Statistics
 
-```{r, echo=FALSE, fig.align='center', fig.width=11}
-par(mfrow=c(1,1))
-mod2 <- lm(log10(resp.rt) ~ participant, data = df)
-with(df, plot(participant, log10(resp.rt), ylab = "log10(RT)", xlab = "Trials", 
-    col = rgb(0, 0, 204, 102, maxColorValue = 255), main = "Reaction time as a function of trial"))
-axis(1, at=c(1:10))
-abline(mod2, col = "red")
-```
 
----
-
-# Statistics
-
-```{r, echo=TRUE, eval=FALSE}
+```r
 lm(log10(resp.rt) ~ participant, data = df)
 ```
 
-```{r, echo=FALSE, results='asis', message = FALSE}
-library(stargazer); library(xtable)
-#stargazer(mod2, type = 'html', align = FALSE, no.space=TRUE, 
-#    single.row=TRUE, omit.stat=c("LL","ser", "rsq"))
-print(xtable(mod2), type = 'html')
-```
+<!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
+<!-- Tue Aug 22 14:04:37 2017 -->
+<table border=1>
+<tr> <th>  </th> <th> Estimate </th> <th> Std. Error </th> <th> t value </th> <th> Pr(&gt;|t|) </th>  </tr>
+  <tr> <td align="right"> (Intercept) </td> <td align="right"> 0.0683 </td> <td align="right"> 0.0245 </td> <td align="right"> 2.79 </td> <td align="right"> 0.0057 </td> </tr>
+  <tr> <td align="right"> participant </td> <td align="right"> -0.0288 </td> <td align="right"> 0.0039 </td> <td align="right"> -7.30 </td> <td align="right"> 0.0000 </td> </tr>
+   </table>
 
 ---
 
-# Conclusion
+## Conclusion
 
 - You now know the basics of Pyschopy2
 	- Can be used to create simple psycholinguistic experiments
@@ -538,7 +510,7 @@ print(xtable(mod2), type = 'html')
 
 ---
 
-# Conclusion
+## Conclusion
 
 ### Pros
 
@@ -553,7 +525,7 @@ print(xtable(mod2), type = 'html')
 
 ---
 
-# More resources
+## More resources
 
 - http://www.jvcasillas.com/teaching/psychopy/
 - http://www.psychopy.org/ 
@@ -562,7 +534,7 @@ print(xtable(mod2), type = 'html')
 
 ---
 
-# References
+## References
 
 - <font size="5">Gray, J. & Pasmanter, N. (2013). [github][github]</font>
 - <font size="5">Lejuez, C. W., Aklin, W. M., Zvolensky, M. J., & Pedulla, C. M. (2003). Evaluation of the Balloon Analogue Risk Task (BART) as a predictor of adolescent real-world risk-taking behaviours. Journal of adolescence, 26(4), 475-479. </font>
@@ -571,8 +543,6 @@ print(xtable(mod2), type = 'html')
 
 
 [github]: https://github.com/psychopy/psychopy/tree/master/psychopy/demos/builder/mental_rotation
-
-
 
 
 
