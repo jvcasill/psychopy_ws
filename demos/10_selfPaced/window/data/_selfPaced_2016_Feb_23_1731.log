@@ -1,0 +1,63 @@
+3.3665 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', color=array([ 0.,  0.,  0.]), colorSpace='rgb', fullscr=UNKNOWN, gamma=None, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor instance at 0x1127a3b48>, name='window1', pos=[0, 0], screen=0, size=array([1680, 1050]), stereo=False, units=u'norm', useFBO=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+3.3665 	EXP 	window1: recordFrameIntervals = False
+3.5319 	EXP 	window1: recordFrameIntervals = True
+3.7153 	EXP 	window1: recordFrameIntervals = False
+3.7520 	EXP 	Created text = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+3.7539 	EXP 	Created image = ImageStim(autoLog=True, color=array([ 1.,  1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1.0, ori=0.0, pos=array([ 0.,  0.]), size=array([ 0.5,  0.5]), texRes=128, units=u'norm', win=Window(...))
+3.7576 	EXP 	Created text_2 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_2', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+3.7609 	EXP 	Created text_3 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_3', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+3.7644 	EXP 	Created text_4 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_4', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+3.7689 	EXP 	Created text_5 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_5', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+3.7728 	EXP 	Created text_6 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_6', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+3.7762 	EXP 	Created text_7 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_7', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+3.7796 	EXP 	Created text_8 = TextStim(alignHoriz='center', alignVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, name='text_8', opacity=1.0, ori=0, pos=array([ 0.,  0.]), rgb=array([ 255.,  255.,  255.]), text=u'default text', units=u'norm', win=Window(...), wrapWidth=1)
+3.7869 	EXP 	window1: units = 'norm'
+3.8152 	EXP 	window1: units = u'norm'
+3.8153 	EXP 	Created rating = RatingScale(acceptKeys=['return'], acceptPreText=UNKNOWN, acceptSize=UNKNOWN, acceptText=u'accept?', autoLog=True, choices=False, depth=0, disappear=False, flipVert=False, high=7, kwargs=UNKNOWN, labels=list(...), leftKeys=['left'], lineColor='White', low=1, marker=ShapeStim(...), markerColor='DarkBlue', markerExpansion=UNKNOWN, markerStart=None, maxTime=0.0, minTime=0.4, mouseOnly=False, name='rating', noMouse=False, pos=[0.0, -0.4], precision=1, respKeys=['1', '2', '3', '4', '5', '6', '7'], rightKeys=['right'], scale='', self=UNKNOWN, showAccept=True, showValue=True, singleClick=False, size=0.6, skipKeys=['tab'], stretch=1.0, textColor='LightGray', textFont='Helvetica Bold', textSize=0.12, tickHeight=1.0, tickMarks=6.0, win=Window(...))
+3.8198 	EXP 	Imported trials.xlsx as conditions, 2 conditions, 11 params
+3.8200 	EXP 	Created sequence: sequential, trialTypes=2, nReps=1, seed=None
+3.8204 	EXP 	New trial (rep=0, index=0): {u'position8': [0, 0], u'sentence': u'Vi al hombre con los ojos.', u'position6': [-0.5, 0], u'word5': u'Vi al hombre con los', u'word4': u'Vi al hombre con', u'word7': u' ', u'word6': u'Vi al hombre con los ojos.', u'word1': u'Vi', u'word3': u'Vi al hombre', u'word2': u'Vi al', u'word8': u' '}
+3.8530 	EXP 	window1: recordFrameIntervals = False
+3.8688 	EXP 	rating: flipVert = False
+3.8688 	EXP 	rating: autoLog = True
+3.8688 	EXP 	text: text = u'Vi al hombre con los ojos.'
+3.8688 	EXP 	text: pos = array([ 0.,  0.])
+3.8688 	EXP 	image: image = u'grey.png'
+3.8688 	EXP 	text: autoDraw = True
+3.8688 	EXP 	image: autoDraw = True
+3.8692 	EXP 	window1: recordFrameIntervals = False
+7.9013 	DATA 	Keypress: space
+7.9158 	EXP 	text: autoDraw = False
+7.9158 	EXP 	image: autoDraw = False
+7.9158 	EXP 	text_2: text = u'Vi al'
+7.9158 	EXP 	text_2: autoDraw = True
+8.6012 	DATA 	Keypress: space
+8.6159 	EXP 	text_2: autoDraw = False
+8.6159 	EXP 	text_3: text = u'Vi al hombre'
+8.6159 	EXP 	text_3: autoDraw = True
+8.9006 	DATA 	Keypress: space
+8.9160 	EXP 	text_3: autoDraw = False
+8.9160 	EXP 	text_4: text = u'Vi al hombre con'
+8.9160 	EXP 	text_4: autoDraw = True
+9.1838 	DATA 	Keypress: space
+9.1994 	EXP 	text_4: autoDraw = False
+9.1994 	EXP 	text_5: text = u'Vi al hombre con los'
+9.1994 	EXP 	text_5: autoDraw = True
+9.4875 	DATA 	Keypress: space
+9.5001 	EXP 	text_5: autoDraw = False
+9.5001 	EXP 	text_6: text = u'Vi al hombre con los ojos.'
+9.5001 	EXP 	text_6: autoDraw = True
+9.8339 	DATA 	Keypress: space
+9.8496 	EXP 	text_6: autoDraw = False
+9.8496 	EXP 	text_7: text = u' '
+9.8496 	EXP 	text_7: autoDraw = True
+10.8496 	EXP 	text_7: autoDraw = False
+10.8496 	EXP 	text_7: autoDraw = False
+10.8496 	EXP 	text_8: text = u' '
+10.8496 	EXP 	text_8: autoDraw = True
+11.3511 	DATA 	Keypress: space
+11.3563 	EXP 	RatingScale rating: reset()
+11.3664 	EXP 	text_8: autoDraw = False
+11.3664 	EXP 	rating: autoDraw = True
+12.2516 	DATA 	Keypress: space
+13.1843 	DATA 	Keypress: escape

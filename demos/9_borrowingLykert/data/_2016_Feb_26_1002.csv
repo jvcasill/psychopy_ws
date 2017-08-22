@@ -1,0 +1,6 @@
+stimuli,practice_trial.thisRepN,practice_trial.thisTrialN,practice_trial.thisN,practice_trial.thisIndex,rating.response,rating.rt,session,group,frameRate,expName,date,participant,
+stim/t01_freeway.wav,0,0,0,2,0.79,6.482,001,,60.0117324878,borrowingLykert,2016_Feb_26_1002,,
+stim/mE_Arizona.wav,0,1,1,0,0.75,3.149,001,,60.0117324878,borrowingLykert,2016_Feb_26_1002,,
+stim/t02_barbies.wav,0,2,2,3,0.31,2.396,001,,60.0117324878,borrowingLykert,2016_Feb_26_1002,,
+stim/t02_senior.wav,0,3,3,4,0.79,2.147,001,,60.0117324878,borrowingLykert,2016_Feb_26_1002,,
+stim/MS_Arizona.wav,0,4,4,1,0.39,2.032,001,,60.0117324878,borrowingLykert,2016_Feb_26_1002,,

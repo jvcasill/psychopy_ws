@@ -1,26 +1,27 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy2 Experiment Builder (v1.81.00), Thu Jan 28 11:44:07 2016
+This experiment was created using PsychoPy2 Experiment Builder (v1.82.01), Fri Feb 26 10:02:30 2016
 If you publish work using this script please cite the relevant PsychoPy publications
   Peirce, JW (2007) PsychoPy - Psychophysics software in Python. Journal of Neuroscience Methods, 162(1-2), 8-13.
   Peirce, JW (2009) Generating stimuli for neuroscience using PsychoPy. Frontiers in Neuroinformatics, 2:10. doi: 10.3389/neuro.11.010.2008
 """
 
 from __future__ import division  # so that 1/3=0.333 instead of 1/3=0
-from psychopy import visual, core, data, event, logging, sound, gui
+from psychopy import locale_setup, visual, core, data, event, logging, sound, gui
 from psychopy.constants import *  # things like STARTED, FINISHED
 import numpy as np  # whole numpy lib is available, prepend 'np.'
 from numpy import sin, cos, tan, log, log10, pi, average, sqrt, std, deg2rad, rad2deg, linspace, asarray
 from numpy.random import random, randint, normal, shuffle
 import os  # handy system and path functions
+import sys # to get file system encoding
 
 # Ensure that relative paths start from the same directory as this script
-_thisDir = os.path.dirname(os.path.abspath(__file__))
+_thisDir = os.path.dirname(os.path.abspath(__file__)).decode(sys.getfilesystemencoding())
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-expName = u'borrowingLykert'  # from the Builder filename that created this script
+expName = 'borrowingLykert'  # from the Builder filename that created this script
 expInfo = {u'participant': u'', u'session': u'001', u'group': u''}
 dlg = gui.DlgFromDict(dictionary=expInfo, title=expName)
 if dlg.OK == False: core.quit()  # user pressed cancel
@@ -33,7 +34,7 @@ filename = _thisDir + os.sep + u'data' + os.path.sep + '%s_%s' %(expInfo['partic
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/casillas/Desktop/borrowingLykert/borrowingLykert.psyexp',
+    originPath=u'/Users/casillas/academia/teaching/workshops/psychopy_ws/demos/9_borrowingLykert/borrowingLykert.psyexp',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
@@ -43,8 +44,8 @@ endExpNow = False  # flag for 'escape' or other condition => quit the exp
 # Start Code - component code to be run before the window creation
 
 # Setup the Window
-win = visual.Window(size=(1680, 1050), fullscr=True, screen=0, allowGUI=False, allowStencil=False,
-    monitor=u'testMonitor', color=[0,0,0], colorSpace='rgb',
+win = visual.Window(size=(1680, 1050), fullscr=True, screen=0, allowGUI=True, allowStencil=False,
+    monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
     blendMode='avg', useFBO=True,
     )
 # store frame rate of monitor if we can measure it successfully
@@ -57,30 +58,26 @@ else:
 # Initialize components for Routine "instructions"
 instructionsClock = core.Clock()
 instructions_text = visual.TextStim(win=win, ori=0, name='instructions_text',
-    text='In this experiment you are going to hear different words. Your task is to decide, as quickly as possible and without making mistakes, if what you heard sounds more like "sheep" or "ship". \n\nYou will use the arrow keys to make your decision. Let\'s do a practice round to make sure you understand. \n\nPress the spacebar to continue.',    font='Arial',
+    text='Instructions go here.',    font='Arial',
     pos=[0, 0], height=0.1, wrapWidth=None,
     color='white', colorSpace='rgb', opacity=1,
     depth=0.0)
 
 # Initialize components for Routine "practice"
 practiceClock = core.Clock()
-numbers = visual.TextStim(win=win, ori=0, name='numbers',
-    text='default text',    font=u'Arial',
-    pos=[0, 0], height=0.1, wrapWidth=None,
-    color=u'white', colorSpace='rgb', opacity=1,
-    depth=0.0)
-practice_sound = sound.Sound('A', secs=-1)
-practice_sound.setVolume(1)
-foreign = visual.TextStim(win=win, ori=0, name='foreign',
-    text=u'Foreign',    font=u'Arial',
+rating = visual.RatingScale(win=win, name='rating', marker='circle', size=1.0, pos=[0.0, -0.4], low=0, high=1, precision=100, showValue=False, markerExpansion=0, scale='', markerStart='50')
+text_3 = visual.TextStim(win=win, ori=0, name='text_3',
+    text='Foreign',    font='Arial',
     pos=[-0.5, 0], height=0.1, wrapWidth=None,
-    color=u'white', colorSpace='rgb', opacity=1,
-    depth=-3.0)
-native = visual.TextStim(win=win, ori=0, name='native',
-    text=u'Native',    font=u'Arial',
+    color='white', colorSpace='rgb', opacity=1,
+    depth=-1.0)
+text_4 = visual.TextStim(win=win, ori=0, name='text_4',
+    text='Native',    font='Arial',
     pos=[0.5, 0], height=0.1, wrapWidth=None,
-    color=u'white', colorSpace='rgb', opacity=1,
-    depth=-4.0)
+    color='white', colorSpace='rgb', opacity=1,
+    depth=-2.0)
+sound_1 = sound.Sound('A', secs=-1)
+sound_1.setVolume(1.0)
 
 # Initialize components for Routine "got_it"
 got_itClock = core.Clock()
@@ -102,21 +99,21 @@ break_text = visual.TextStim(win=win, ori=0, name='break_text',
 # Initialize components for Routine "trial"
 trialClock = core.Clock()
 numbersTrial = visual.TextStim(win=win, ori=0, name='numbersTrial',
-    text='default text',    font=u'Arial',
+    text='default text',    font='Arial',
     pos=[0, 0], height=0.1, wrapWidth=None,
-    color=u'white', colorSpace='rgb', opacity=1,
+    color='white', colorSpace='rgb', opacity=1,
     depth=0.0)
 trial_sound = sound.Sound('A', secs=-1)
 trial_sound.setVolume(1)
 FoerignTrial = visual.TextStim(win=win, ori=0, name='FoerignTrial',
-    text=u'Foreign',    font=u'Arial',
+    text='Foreign',    font='Arial',
     pos=[-0.5, 0], height=0.1, wrapWidth=None,
-    color=u'white', colorSpace='rgb', opacity=1,
+    color='white', colorSpace='rgb', opacity=1,
     depth=-3.0)
 nativeTrial = visual.TextStim(win=win, ori=0, name='nativeTrial',
-    text=u'Native',    font=u'Arial',
+    text='Native',    font='Arial',
     pos=[0.5, 0], height=0.1, wrapWidth=None,
-    color=u'white', colorSpace='rgb', opacity=1,
+    color='white', colorSpace='rgb', opacity=1,
     depth=-4.0)
 
 # Initialize components for Routine "end"
@@ -208,7 +205,7 @@ for thisComponent in instructionsComponents:
 
 # set up handler to look after randomisation of conditions etc
 practice_trial = data.TrialHandler(nReps=1, method='random', 
-    extraInfo=expInfo, originPath='/Users/casillas/Desktop/borrowingLykert/borrowingLykert.psyexp',
+    extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('practice_trial.xlsx'),
     seed=None, name='practice_trial')
 thisExp.addLoop(practice_trial)  # add the loop to the experiment
@@ -230,17 +227,15 @@ for thisPractice_trial in practice_trial:
     practiceClock.reset()  # clock 
     frameN = -1
     # update component parameters for each repeat
-    numbers.setText(u'1  2  3  4  5  6')
-    practice_sound.setSound(stimuli)
-    key_resp_practice = event.BuilderKeyResponse()  # create an object of type KeyResponse
-    key_resp_practice.status = NOT_STARTED
+    rating.reset()
+    sound_1.setSound(stimuli, secs=-1)
+    sound_1.setVolume(1)
     # keep track of which components have finished
     practiceComponents = []
-    practiceComponents.append(numbers)
-    practiceComponents.append(practice_sound)
-    practiceComponents.append(key_resp_practice)
-    practiceComponents.append(foreign)
-    practiceComponents.append(native)
+    practiceComponents.append(rating)
+    practiceComponents.append(text_3)
+    practiceComponents.append(text_4)
+    practiceComponents.append(sound_1)
     for thisComponent in practiceComponents:
         if hasattr(thisComponent, 'status'):
             thisComponent.status = NOT_STARTED
@@ -252,57 +247,33 @@ for thisPractice_trial in practice_trial:
         t = practiceClock.getTime()
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
+        # *rating* updates
+        if t >= 0.0 and rating.status == NOT_STARTED:
+            # keep track of start time/frame for later
+            rating.tStart = t  # underestimates by a little under one frame
+            rating.frameNStart = frameN  # exact frame index
+            rating.setAutoDraw(True)
+        continueRoutine &= rating.noResponse  # a response ends the trial
         
-        # *numbers* updates
-        if t >= 0.0 and numbers.status == NOT_STARTED:
+        # *text_3* updates
+        if t >= 0.0 and text_3.status == NOT_STARTED:
             # keep track of start time/frame for later
-            numbers.tStart = t  # underestimates by a little under one frame
-            numbers.frameNStart = frameN  # exact frame index
-            numbers.setAutoDraw(True)
-        # start/stop practice_sound
-        if t >= 0.5 and practice_sound.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            practice_sound.tStart = t  # underestimates by a little under one frame
-            practice_sound.frameNStart = frameN  # exact frame index
-            practice_sound.play()  # start the sound (it finishes automatically)
-        if practice_sound.status == STARTED and t >= (0.5 + (3.0-win.monitorFramePeriod*0.75)): #most of one frame period left
-            practice_sound.stop()  # stop the sound (if longer than duration)
+            text_3.tStart = t  # underestimates by a little under one frame
+            text_3.frameNStart = frameN  # exact frame index
+            text_3.setAutoDraw(True)
         
-        # *key_resp_practice* updates
-        if t >= 0.5 and key_resp_practice.status == NOT_STARTED:
+        # *text_4* updates
+        if t >= 0.0 and text_4.status == NOT_STARTED:
             # keep track of start time/frame for later
-            key_resp_practice.tStart = t  # underestimates by a little under one frame
-            key_resp_practice.frameNStart = frameN  # exact frame index
-            key_resp_practice.status = STARTED
-            # keyboard checking is just starting
-            key_resp_practice.clock.reset()  # now t=0
-            event.clearEvents(eventType='keyboard')
-        if key_resp_practice.status == STARTED:
-            theseKeys = event.getKeys(keyList=['1', '2', '3', '4', '5', '6'])
-            
-            # check for quit:
-            if "escape" in theseKeys:
-                endExpNow = True
-            if len(theseKeys) > 0:  # at least one key was pressed
-                if key_resp_practice.keys == []:  # then this was the first keypress
-                    key_resp_practice.keys = theseKeys[0]  # just the first key pressed
-                    key_resp_practice.rt = key_resp_practice.clock.getTime()
-                    # a response ends the routine
-                    continueRoutine = False
-        
-        # *foreign* updates
-        if t >= 0.0 and foreign.status == NOT_STARTED:
+            text_4.tStart = t  # underestimates by a little under one frame
+            text_4.frameNStart = frameN  # exact frame index
+            text_4.setAutoDraw(True)
+        # start/stop sound_1
+        if t >= 0.5 and sound_1.status == NOT_STARTED:
             # keep track of start time/frame for later
-            foreign.tStart = t  # underestimates by a little under one frame
-            foreign.frameNStart = frameN  # exact frame index
-            foreign.setAutoDraw(True)
-        
-        # *native* updates
-        if t >= 0.0 and native.status == NOT_STARTED:
-            # keep track of start time/frame for later
-            native.tStart = t  # underestimates by a little under one frame
-            native.frameNStart = frameN  # exact frame index
-            native.setAutoDraw(True)
+            sound_1.tStart = t  # underestimates by a little under one frame
+            sound_1.frameNStart = frameN  # exact frame index
+            sound_1.play()  # start the sound (it finishes automatically)
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -325,14 +296,10 @@ for thisPractice_trial in practice_trial:
     for thisComponent in practiceComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    practice_sound.stop() #ensure sound has stopped at end of routine
-    # check responses
-    if key_resp_practice.keys in ['', [], None]:  # No response was made
-       key_resp_practice.keys=None
     # store data for practice_trial (TrialHandler)
-    practice_trial.addData('key_resp_practice.keys',key_resp_practice.keys)
-    if key_resp_practice.keys != None:  # we had a response
-        practice_trial.addData('key_resp_practice.rt', key_resp_practice.rt)
+    practice_trial.addData('rating.response', rating.getRating())
+    practice_trial.addData('rating.rt', rating.getRT())
+    sound_1.stop() #ensure sound has stopped at end of routine
     # the Routine "practice" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
@@ -424,7 +391,7 @@ for thisComponent in got_itComponents:
 
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=3, method='random', 
-    extraInfo=expInfo, originPath='/Users/casillas/Desktop/borrowingLykert/borrowingLykert.psyexp',
+    extraInfo=expInfo, originPath=-1,
     trialList=data.importConditions('trial.xlsx'),
     seed=None, name='trials')
 thisExp.addLoop(trials)  # add the loop to the experiment
@@ -525,8 +492,8 @@ for thisTrial in trials:
     trialClock.reset()  # clock 
     frameN = -1
     # update component parameters for each repeat
-    numbersTrial.setText(u'1  2  3  4  5  6')
-    trial_sound.setSound(stimuli)
+    numbersTrial.setText('1  2  3  4  5  6')
+    trial_sound.setSound(stimuli, secs=3.0)
     key_resp_trial = event.BuilderKeyResponse()  # create an object of type KeyResponse
     key_resp_trial.status = NOT_STARTED
     # keep track of which components have finished
@@ -570,7 +537,7 @@ for thisTrial in trials:
             key_resp_trial.frameNStart = frameN  # exact frame index
             key_resp_trial.status = STARTED
             # keyboard checking is just starting
-            key_resp_trial.clock.reset()  # now t=0
+            win.callOnFlip(key_resp_trial.clock.reset)  # t=0 on next screen flip
             event.clearEvents(eventType='keyboard')
         if key_resp_trial.status == STARTED:
             theseKeys = event.getKeys(keyList=['1', '2', '3', '4', '5', '6'])
@@ -717,5 +684,10 @@ for thisComponent in endComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 
+# these shouldn't be strictly necessary (should auto-save)
+thisExp.saveAsWideText(filename+'.csv')
+thisExp.saveAsPickle(filename)
+# make sure everything is closed down
+thisExp.abort() # or data files will save again on exit
 win.close()
 core.quit()

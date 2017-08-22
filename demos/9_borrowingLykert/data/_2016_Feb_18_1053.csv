@@ -1,0 +1,3 @@
+stimuli,practice_trial.thisRepN,practice_trial.thisTrialN,practice_trial.thisN,practice_trial.thisIndex,rating.response,rating.rt,session,group,frameRate,expName,date,participant,
+stim/t02_senior.wav,0,0,0,4,73,9.721,001,,60.2068473507,borrowingLykert,2016_Feb_18_1053,,
+stim/t02_barbies.wav,0,1,1,3,17,2.746,001,,60.2068473507,borrowingLykert,2016_Feb_18_1053,,
