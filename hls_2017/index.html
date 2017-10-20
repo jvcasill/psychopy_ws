@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bilingual research:</title>
+    <title>Best practices and tools for pycholinguistic research with bilinguals:</title>
     <meta charset="utf-8">
-    <meta name="author" content="Joseph V. Casillas, PhD" />
-    <link rel="stylesheet" href="../assets/css/mySlides.css" type="text/css" />
+    <meta name="author" content="Joseph V. Casillas, PhD | Rutgers University" />
+    <link rel="stylesheet" href="http://www.jvcasillas.com/ru_xaringan_css/css/ru_xaringan.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Bilingual research:
-## Perception experiment with PsychoPy2
-### Joseph V. Casillas, PhD
-### Rutgers University </br> 10/26/2017
+# Best practices and tools for pycholinguistic research with bilinguals:
+## A gentle introduction to PsychoPy2
+### Joseph V. Casillas, PhD | Rutgers University
+### Hispanic Linguistics Symposium - Lubbock, TX </br> 10/26/2017
 
 ---
 
@@ -24,6 +24,28 @@ class: center, middle, inverse, title-slide
 
 
 
+# What are we doing?
+
+### Best practices
+
+- Languages modes
+- Language dominance (take BLP to psychopy?)
+- Language proficiency
+
+
+### PschoPy2
+
+- What is psychopy and why do I want it?
+- Where and how do I get it?
+- What is psychopy good for?
+- What is psychopy not good for?
+- Example: stroop task
+- Example: language specifications
+- Bonus:
+  - integration with R, project management
+  - OSF, templates and open scie
+
+---
 
 
 # Goals
@@ -499,8 +521,8 @@ df &lt;- do.call("rbind",myfiles)
 lm(log10(resp.rt) ~ participant, data = df)
 ```
 
-&lt;!-- html table generated in R 3.4.0 by xtable 1.8-2 package --&gt;
-&lt;!-- Tue Aug 22 14:11:34 2017 --&gt;
+&lt;!-- html table generated in R 3.4.1 by xtable 1.8-2 package --&gt;
+&lt;!-- Thu Oct 19 21:30:03 2017 --&gt;
 &lt;table border=1&gt;
 &lt;tr&gt; &lt;th&gt;  &lt;/th&gt; &lt;th&gt; Estimate &lt;/th&gt; &lt;th&gt; Std. Error &lt;/th&gt; &lt;th&gt; t value &lt;/th&gt; &lt;th&gt; Pr(&amp;gt;|t|) &lt;/th&gt;  &lt;/tr&gt;
   &lt;tr&gt; &lt;td align="right"&gt; (Intercept) &lt;/td&gt; &lt;td align="right"&gt; 0.0683 &lt;/td&gt; &lt;td align="right"&gt; 0.0245 &lt;/td&gt; &lt;td align="right"&gt; 2.79 &lt;/td&gt; &lt;td align="right"&gt; 0.0057 &lt;/td&gt; &lt;/tr&gt;
