@@ -12,6 +12,8 @@ output:
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
+    includes:
+      in_header: "../assets/partials/header.html"
 ---
 
 
@@ -25,29 +27,196 @@ rmarkdown::render("./hls_2017/index.Rmd")
 xaringan::inf_mr()
 ```
 
+class: inverse, middle
+
+.center[
+
+# **Don't miss out...**
+
+]
+
+.pull-left[
+
+- <white>These slides and all materiales are available on github</white>
+
+- <white>Write down contact information in case you have to leave early</white>
+
+]
+
+.pull-right[
+
+<a href="mailto:joseph.casillas@rutgers.edu"><white><i class="fa fa-paper-plane fa-fw"></i></white>&nbsp; <white>joseph.casillas@rutgers.edu</a></white><br>
+<a href="https:www.jvcasillas.com"><white><i class="fa fa-link fa-fw"></i></white>&nbsp; <white>jvcasillas.com</a></white><br>
+<a href="http://twitter.com/jvcasill"><white><i class="fa fa-twitter fa-fw"></i></white>&nbsp; <white>@jvcasill</a></white><br>
+<a href="http://github.com/jvcasillas"><white><i class="fa fa-github fa-fw"></i></white>&nbsp; <white>@jvcasillas</a></white><br>
+
+]
+
+---
+background-image: url(http://blueforeststudios.com/azultree/wp-content/uploads/2015/11/Real-time-marketing.jpg)
+background-size: 600px
+background-position: 100% 50%
+
 # What are we doing?
 
-### Best practices
+### Part I - Best practices
 
-- Languages modes
-- Language dominance (take BLP to psychopy?)
+- Bilingual language modes
 - Language proficiency
+- Language dominance
 
+--
 
-### PschoPy2
+### Part II - PsychoPy2
 
-- What is psychopy and why do I want it?
-- Where and how do I get it?
+- What is psychopy and why do you want it?
+- Where and how do you get it?
 - What is psychopy good for?
 - What is psychopy not good for?
-- Example: stroop task
-- Example: language specifications
+- Demo: stroop task
 - Bonus:
   - integration with R, project management
-  - OSF, templates and open scie
+  - OSF, templates and reproducible research
+
+---
+class: inverse, middle, center
+
+# Part I
+
+### Best practices for pycholinguistic research with bilinguals
+
+---
+background-image: url(../assets/img/modes.png)
+background-size: 300pt
+background-position: 20% 50%
+background-color: black
+class: right
+
+# Bilingual language modes
 
 ---
 
+# Bilingual language modes
+
+### The basics
+
+- What are they?
+- Why are they important to me?
+- What do I need to know/do?
+
+---
+background-image: url(../assets/img/proficiency.png)
+background-size: 350pt
+background-position: 20% 105%
+background-color: black
+class: right
+
+# Language proficiency
+
+### ...and how to measure it
+
+---
+
+# Language proficiency
+
+### The basics
+
+- What is it?
+- Why do I care?
+- What do I need to know/do?
+
+### Options
+
+- LexTALE
+- DELE
+
+---
+background-color: black
+class: right
+
+# Language dominance 
+
+### ...and how to measure it
+
+---
+
+# Language dominance
+
+### The basics
+
+- What is it?
+- Why is it important to me?
+- What do I need to know/do?
+
+### Options
+
+- BLP
+- Multi-Lingual Naming Test MINT
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class: inverse, middle, center
+
+# Part II
+
+## Introduction to PsychoPy2
+
+---
+class: inverse, center
+
+# How to...
+
+## 1. **Just watch**
+
+---
+class: inverse, center
+
+# How to...
+
+## 2. **Follow along with me**
+
+---
+class: inverse, middle, center
+
+# You should have PsychoPy2 installed 
+--
+
+# If not, get it here: https://github.com/psychopy/psychopy/releases
+
+--
+
+### ...**but hurry!**
+
+---
 
 # Goals
 
@@ -83,14 +252,16 @@ class: inverse, middle, center
 
 ---
 
-# What is it?
+# Overview
+
+### What is it?
 
 - PsychoPy2 is a free program made in Python 
 - It can be used to create experiments in psychology, psychophysics, neuroscience and linguistics.
 
 </br>
 
-# Why do you want it?
+### Why do you want it?
 
 - It's free!
 - It's cross-platform
@@ -98,7 +269,9 @@ class: inverse, middle, center
 
 ---
 
-# What is it good for?
+# Overview
+
+### What is it good for?
 
 - PsychoPy2 can be used to create psycholinguistic tasks: 
     - 2AFC
@@ -108,7 +281,7 @@ class: inverse, middle, center
 
 </br>
 
-# What is it not good for?
+### What is it not good for?
 
 - ?
 
@@ -504,7 +677,7 @@ df <- do.call("rbind",myfiles)
 
 # Plots
 
-```{r, echo=FALSE, fig.align='center', fig.width=11, fig.height=6}
+```{r, echo=FALSE, fig.align='center', fig.width=11, fig.height=6, fig.retina=2}
 # plot rt as a function of text
 par(mfrow=c(1,2))
 # get descriptive statistics of subsets of factors
@@ -520,7 +693,7 @@ with(df, plot(log(resp.rt)~letterColor, ylab = "log(RT)", xlab = "Colors",
 
 # Plots
 
-```{r, echo=FALSE, fig.align='center', fig.width=11}
+```{r, echo=FALSE, fig.align='center', fig.width=11, fig.retina=2}
 par(mfrow=c(1,1))
 mod2 <- lm(log10(resp.rt) ~ participant, data = df)
 with(df, plot(participant, log10(resp.rt), ylab = "log10(RT)", xlab = "Trials", 
