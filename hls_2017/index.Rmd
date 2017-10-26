@@ -31,7 +31,7 @@ class: inverse, middle
 
 .center[
 
-# **Don't miss out...**
+# **Don't miss out...&nbsp; &nbsp; &nbsp; &nbsp;**
 
 ]
 
@@ -46,7 +46,7 @@ class: inverse, middle
 .pull-right[
 
 <a href="mailto:joseph.casillas@rutgers.edu"><white><i class="fa fa-paper-plane fa-fw"></i></white>&nbsp; <white>joseph.casillas@rutgers.edu</a></white><br>
-<a href="https:www.jvcasillas.com"><white><i class="fa fa-link fa-fw"></i></white>&nbsp; <white>jvcasillas.com</a></white><br>
+<a href="https:www.jvcasillas.com/psychopy_ws"><white><i class="fa fa-link fa-fw"></i></white>&nbsp; <white>jvcasillas.com/psychopy_ws</a></white><br>
 <a href="http://twitter.com/jvcasill"><white><i class="fa fa-twitter fa-fw"></i></white>&nbsp; <white>@jvcasill</a></white><br>
 <a href="http://github.com/jvcasillas"><white><i class="fa fa-github fa-fw"></i></white>&nbsp; <white>@jvcasillas</a></white><br>
 
@@ -105,9 +105,28 @@ class: right
 - What do I need to know/do?
 
 ---
-background-image: url(../assets/img/proficiency.png)
+
+# Bilingual language modes
+
+<div style="float:right">
+  <img width="300" src="../assets/img/kiwi.png">
+</div>
+
+### Stuffed toys and perceptual boundary shifts
+
+- Hay & Drager (2010)
+- Gonzales & Lotto (2013)
+- Antoniou, Best & Tyler (2013)
+
+### Production asymmetries
+
+- Antoniou, Best, Tyler & Kroos (2010, 2011)
+
+
+---
+background-image: url(../assets/img/proficiency.gif)
 background-size: 350pt
-background-position: 20% 105%
+background-position: 20% 65%
 background-color: black
 class: right
 
@@ -191,30 +210,63 @@ class: inverse, middle, center
 ## Introduction to PsychoPy2
 
 ---
-class: inverse, center
+class: center, middle
 
-# How to...
-
-## 1. **Just watch**
+# Who is this for?
 
 ---
-class: inverse, center
+class: middle
 
-# How to...
-
-## 2. **Follow along with me**
-
----
-class: inverse, middle, center
-
-# You should have PsychoPy2 installed 
---
-
-# If not, get it here: https://github.com/psychopy/psychopy/releases
+<div style="float:right">
+  <img width="600" src="../assets/img/powerpoint.png">
+</div>
 
 --
 
-### ...**but hurry!**
+background-image: url(https://www.govloop.com/wp-content/uploads/2016/08/powerpoint-hacks.gif)
+background-position: 10% 50%
+background-size: 300px
+
+---
+class: middle
+background-image: url(../assets/img/right_arrow.png)
+background-position: 50% 50%
+background-size: 75px
+
+<div>
+  <img width="400" src="../assets/img/powerpoint.png">
+  <img width="175" src="../assets/img/fill.png">
+  <img width="400" src="../assets/img/excel.png">
+</div>
+
+---
+background-image: url(../assets/img/excel2.png)
+background-position: 50% 50%
+background-size: contain
+
+---
+class: center, middle
+background-image: url(https://i.ytimg.com/vi/jiGjP04HTRU/maxresdefault.jpg)
+background-position: 50% 10%
+background-size: 700px
+
+--
+
+</br></br></br></br></br></br></br></br></br></br></br></br></br>
+# 💰💸🤑💵
+
+---
+class: center, middle
+
+# Problems?
+
+### Not efficient  
+
+### Not accurate  
+
+### Not reproducible  
+
+### Not free
 
 ---
 
@@ -235,17 +287,6 @@ class: inverse, middle, center
 - You will have the resources to create more complicated experiments
 
 ---
-
-# Plan
-
-- Overview of PsychoPy2
-- Demo
-- Using PsychoPy2 - the interface
-- Creating a simple experiment - Stroop task
-- Dealing with results
-- Concluding ideas
-
----
 class: inverse, middle, center
 
 # Overview
@@ -260,6 +301,8 @@ class: inverse, middle, center
 - It can be used to create experiments in psychology, psychophysics, neuroscience and linguistics.
 
 </br>
+
+--
 
 ### Why do you want it?
 
@@ -277,125 +320,95 @@ class: inverse, middle, center
     - 2AFC
     - AX, AXB, ABX
     - Lexical decision (masked prime)
-    - even production experiments
+    - Production experiments
+    - Pretty much anything you can design
 
 </br>
+
+--
 
 ### What is it not good for?
 
 - ?
 
 ---
+class: inverse, center, middle
 
 # Getting started
 
-### Download latest version of PsychoPy2
+---
+class: inverse, center
 
-- http://sourceforge.net/projects/psychpy/files/PsychoPy/
-- You can also google 'psychopy'
-- Choose 'standalone' version
+# How to...
 
-</br>
+## 1. **Just watch**
 
-### Download workshop files
+--
 
-- http://www.jvcasillas.com/teaching/psychopy/
+## 2. **Follow along with me**
+
+--
+
+www.jvcasillas.com/psychopy_ws
 
 ---
 class: inverse, middle, center
 
-# Examples
+# You should have PsychoPy2 installed 
+--
+
+# If not, get it here: https://github.com/psychopy/psychopy/releases
+
+--
+
+### ...**but hurry!**
+
+---
+class: inverse, middle, center
+
+# A simple experiment
 
 ---
 
-# Risky business
+# A simple experiment
 
-.pull-left[
+### Two alternative forced-choice grammaticality judgment task
 
-- Balloon Analogue Risk Task (BART) (Lejuez et al., 2002)
-- The measure is designed to quantify individual differences in risk-taking.
+- We are interested in studying age effects in second language acquisition. 
 
-]
+--
 
-.pull-right[
+- We decide to look at the acquisition of verb morphology in L2 learners of English (based on Johnson & Newport, 1989)
 
-<div style="float: right">
-  <img src="../assets/img/cruise.png">
-</div>
+--
 
-]
+- We want to show our participants a series of sentences.
 
----
+--
 
-# Mental rotation
+- Some sentences will contain incorrect past tense morphology and some sentences will 
+be grammatical.
 
-.pull-left[
+--
 
-- Cognitive task related to mental representations of objects (Gray & Pasmanter, 2013)
+- Participants will see the sentences on the screen and decide if they are grammatically correct of incorrect.
 
-</br> 
+--
 
-<div align="center">
-  <img src="../assets/img/graph.png">    
-</div>
-
-]
-
-.pull-right[
-
-<div style="float: right">
-  <img src="../assets/img/f.png">
-  <img src="../assets/img/fr.png">
-</div>
-
-<!-- - The time taken to decide if two images are the same or different depends linearly on the angle of rotation. So the longest time should be at 180 degress, and the expected
-result is a peak-shape graph of RT as a function of rotation angle 
- -->
-]
+- Our hypothesis: We expect a negative correlation between age of acquisition and response accuracy.
 
 ---
+background-image: url(../assets/img/psy/01.png)
+background-size: 600px
+background-position: 100% 50%
 
-# A linguistic experiment
+# Setting up...
 
-.pull-left[
+- Create a folder on your desktop
 
-- 2AFC
-- Interested in perception of non-native vowel contrasts
-    - What acoustic cues do late-learners of English use to perceive tense/lax contrasts?
-    - Spectrum? Duration?
-- /i/-/ɪ/
+- Call it **myexp**
 
-]
-
-.pull-right[
-
-<div style="float: right">
-  <img src="../assets/img/sheep1.png">  
-  </br>
-  <img src="../assets/img/ship1.png">
-</div>
-
-]
-
----
-
-# The stimuli
-
-- 11-step spectrum continuum
-- 11-step duration continuum
-
-<div align="center">
-  <img src="../assets/img/stimuli.png">
-</div>
-
----
-
-# Results
-
-<div align="center">
-  <img src="../assets/img/ne.png">
-  <img src="../assets/img/ll.png">
-</div>
+- Open PsychoPy
 
 ---
 class: inverse, middle, center
@@ -437,226 +450,371 @@ for p in iter_primes():
 ]
 
 ---
+background-image: url(../assets/img/psy/02.png)
+background-size: contain
+
+---
+background-image: url(../assets/img/psy/02a.png)
+background-size: contain
+
+---
 
 # The interface (Builder mode)
 
 <div style="float: right">
-  <img src="../assets/img/screeny.png">
+  <img width="550" src="../assets/img/psy/02a.png">
 </div>
 
 - Provides a graphical user interface
-- Linear representation of experiment 'flow'
-- Row view of routine components
+
+- Linear representation of experiment **flow**
+
+- Row view of routine <blue>components</blue>
 
 ---
+background-image: url(../assets/img/psy/03a.png), url(../assets/img/psy/03b.png), url(../assets/img/psy/03c.png)
+background-size: 50px, 400px, 50px
+background-position: 55% 23%, 95% 50%, 55% 37%
 
-# The interface (Experiment flow)
+# Presenting text - Stimuli components
 
-- The experiment advances linearly from left to right
-- Each element (a routine) finishes before advancing
-- Similar to slides in a power point
+- Click on the large "T" to create a text component
 
-</br>
+- Click "OK" after a new window pops up. 
 
-<div align="center">
-  <img src="../assets/img/flow.png">
-</div>
+- Click the disk icon to save your experiment in the  
+**myexp** folder on your desktop
 
----
-
-# Routines
-
-- Individual view of each 'slide'
-- Comprised of a series of components that perform a task
-
-<div align="center">
-  <img src="../assets/img/routines.png">
-</div>
+- Call it ```myexp.psyexp```
 
 ---
+background-image: url(../assets/img/psy/04a.png), url(../assets/img/psy/04.png)
+background-size: 50px, 1250px
+background-position: 65.5% 72%, 50% 50%
+class: middle,
 
-# Components list
+</br></br></br></br></br>
 
-.pull-left[
-
-- Stimuli
-    - Text/Audio/Img/Video
-- Responses
-	- Keyboard, lykert scales, button boxes, mouse tracking, eye tracking, microphone
-- Custom
-	- Python code
-
-]
 
 .pull-right[
 
-<div style="float: right">
-  <img src="../assets/img/components.png">
-</div>
+### - The text component appears as part of our trial routine
+
+### - Click the &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; icon to run the experiment
 
 ]
+
+---
+
+# Running the experiment
+
+<div style="float: right">
+  <img width="40" src="../assets/img/fill.png">
+  <img width="450" src="../assets/img/psy/05.png">
+</div>
+
+- Every time you run the experiment you will be prompted with an info window
+
+- Here you can include important information about your experiment
+
+- For now we will leave this information as is. Click OK. 
+
+- What happened?
+
+--
+
+<div style="float: right">
+  <img width="450" src="../assets/img/psy/04b.png">
+</div>
+
+- Click on the 'text' component
+
+---
+
+# Presenting text - Stimuli components
+
+<img width="350" src="../assets/img/psy/06a.png">
+
+--
+
+background-image: url(../assets/img/psy/06b.png)
+background-size: 350px
+background-position: 65% 78%
+
+---
+background-image: url(../assets/img/psy/07.png)
+background-size: contain
+background-color: grey
+
+---
+
+# **What did we learn?**
+
+1. We can use **stimuli text components** to present text on  
+the screen in a <blue>routine</blue>
+
+2. We can give the components useful names
+
+3. We can control *when*, *where*, and for *how long*  
+the text appears
+
+4. We can also adjust the font and the colors
+
+5. It is possible to present stimuli other than text  
+(i.e., sounds, images, videos, etc.)
+
+--
+
+background-image: url(../assets/img/psy/06c.png)
+background-size: 400px
+background-position: 95% 50%
+
+### Now click the text component again and delete the  
+### duration (make it blank)
+
+---
+background-image: url(../assets/img/psy/08b.png), url(../assets/img/psy/08a.png), url(../assets/img/psy/03c.png), url(../assets/img/psy/09.png)
+background-size: 50px, 350px, 50px, 350px
+background-position: 39.5% 23%, 25% 100%, 44% 37%, 80% 100%
+
+# Participant control - Response components
+
+- Click on the large keyboard icon &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; to create a **key response** component
+
+- Make yours look like the one below
+
+- Click "OK" and then click the disk icon &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; to save
+
+---
+background-image: url(../assets/img/psy/08b.png)
+background-size: 50px
+background-position: 46.5% 28.5%
+
+# Participant control - Response components
+
+- Participants will now be able to use the left and right arrow keys to make their judgments
+
+- Now let's add two more text components &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; to help them decide
+  - On the left side we'll put a 'Correct' text component
+  - On the right side we'll put an 'Incorrect' text component
+
+<div>
+  <img width="300" src="../assets/img/psy/10a.png">
+  <img width="100" src="../assets/img/hfill.png">
+  <img width="300" src="../assets/img/psy/11a.png">
+</div>
+
+---
+class: middle, center
+
+<div>
+  <img width="450" src="../assets/img/psy/10b.png">
+  <img width="100" src="../assets/img/hfill.png">
+  <img width="450" src="../assets/img/psy/11b.png">
+</div>
+
+---
+background-image: url(../assets/img/psy/12.png)
+background-size: contain
+background-color: grey
+
+---
+background-image: url(../assets/img/psy/13.png)
+background-size: contain
+background-color: grey
+
+---
+
+# **What did we learn?**
+
+1. We can include **keyboard response components** in our <blue>routine</blue> to record participants' responses
+
+2. We will often use response components in conjunction with stimuli components
+
+3. We control *how long* they last and *what* they record 
+
+4. There are many response possible components (i.e., keyboards, button boxes, microphones, mouse clicks, etc.)
+
+--
+
+### How do we include many trials?
+
+--
+
+<div align="center">
+<img width="750" src="../assets/img/psy/14.png">
+</div>
+
+---
+
+# Condition files and loops
+
+- The solution is to create a **condition file** with all our trials and *loop* through them in a single <blue>routine</blue>
+- 2 options: .csv file (textedit.app, notepad) or .xlsx file (excel)
+- Choose your favorite and make a file with the following characteristics:
+
+<div>
+  <img width="450" src="../assets/img/psy/15a.png">
+  <img width="100" src="../assets/img/hfill.png">
+  <img width="450" src="../assets/img/psy/15c.png">
+</div>
+
+---
+
+<div>
+  <img width="450" src="../assets/img/psy/15a.png">
+  <img width="100" src="../assets/img/hfill.png">
+  <img width="450" src="../assets/img/psy/15c.png">
+</div>
+
+- Each column represents a variable in our experiment
+- Use informative variable labels
+- Avoid spaces, unusual characters, periods, etc.
+--
+
+- I have included
+  - <blue>item</blue>: the experimental item (sentence) to be displayed
+  - <blue>grammaticality</blue>: if the sentence is grammatical or ungrammatical
+  - <blue>verb</blue>: the infinitive of the verb
+  - <blue>corrResp</blue>: whether the *correct response* corresponds with the left arrow (correct) or the right arrow (incorrect)
+
+---
+
+<div>
+  <img width="450" src="../assets/img/psy/15b.png">
+  <img width="100" src="../assets/img/hfill.png">
+  <img width="450" src="../assets/img/psy/15d.png">
+</div>
+
+- Create any sentences you want (or copy these ones)
+- Save the file to the **myexp** folder
+- Name the file **condition_file.csv** (or condition_file.xlsx)
+
+---
+
+# Condition files and loops
+
+- We are ready to **loop** through our trials in our <blue>routine</blue>
+
+- Click 'Insert Loop' from the *flow* menu
+
+<img width="350" src="../assets/img/psy/16.png">
+
+--
+
+background-image: url(../assets/img/right_arrow.png), url(../assets/img/psy/17a.png)
+background-size: 75px, 350px
+background-position: 40% 60%, 63% 70%
+
+---
+class: middle, center
+background-image: url(../assets/img/psy/17b.png), url(../assets/img/right_arrow.png), url(../assets/img/psy/17c.png)
+background-size: 350px, 75px, 350px
+background-position: 25% 10%, 50% 20%, 75% 10%
+
+--
+
+<div>
+  <img width="100%" src="../assets/img/psy/18.png">
+</div>
+
+---
+
+# Condition files and loops
+
+- The loops is ready, but we need to let our **text_sentence component** know about our <blue>condition_file</blue>
+
+- Click on **text_sentence** 
+
+- We are going to tell the text component that we want it to present the items in our condition file from the column called *item*
+
+---
+class: middle
+
+<div align="center">
+  <img width="400" src="../assets/img/psy/19a.png">
+  <img width="100" src="../assets/img/hfill.png">
+  <img width="400" src="../assets/img/psy/19b.png">
+</div>
+
+- The **$** tells python that 'item' is a variable that needs to be updated on each trial
+- Do not forgot to change the text constant to "set every repeat"!!!
+
+---
+
+# Condition files and loops
+
+- We can also tell psychopy that we know what the correct answer should be for each trial 
+
+- We created this variable in our **condition_file** in the column <blue>corrResp</blue>
+
+- So we need to update our key_resp_sentence component so that it logs the correct responses
+
+- Click on "key_resp_sentence"
+
+---
+class: middle
+
+<div align="center">
+  <img width="400" src="../assets/img/psy/20a.png">
+  <img width="100" src="../assets/img/hfill.png">
+  <img width="400" src="../assets/img/psy/20b.png">
+</div>
+
+</br>
+
+--
+
+- If our participant gets the answer wrong, pyschopy will store a 0, if the answer is correct it will store a 1
+
+---
+background-image: url(../assets/img/psy/21c.png)
+background-size: 50px
+background-position: 44.5% 49%
+
+# Almost done...
+
+### But what about age of acquisition???
+
+- Our hypothesis is that AoA is negatively correlated with response accuracy
+
+- We need to include AoA in the experiment so that it will be logged for each participant
+
+- Click on the **experiment settings** icon &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; to adjust the "experiment info" field
+
+---
+background-image: url(../assets/img/psy/21a.png), url(../assets/img/psy/21b.png)
+background-size: 500px, 500px
+background-position: 5% 50%, 95% 50%
+
+---
+
+# Run the experiment!
+
+- After you have made the final changes, save, and run the experiment
+
+- You can now fill out the info prompt with your participants data
+
+<div align="center">
+<img width="400" src="../assets/img/psy/22.png">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 class: inverse, middle, center
 
-# Demo
-
----
-
-# How to build your own experiment
-
-- Decide what you want to do
-- Find a similar template
-- Choose variables
-- Create loops
-
----
-
-# Stroop task
-
-<div align="center">
-  <img src="../assets/img/stroop.png">
-</div>
-
----
-
-# Stroop task
-
-1. Create a new folder 'stroop' on your desktop
-2. Launch Pyschopy2
-    - Open new builder window 
-    - Save new experiment as 'stroop.psyexp' in the 'stroop' folder
-3. Select new keyboard response component
-
-
----
-
-<div align="center">
-  <img src="../assets/img/kb_response1.png">
-</div>
-
----
-
-<div align="center">
-  <img src="../assets/img/kb_response2.png">
-</div>
-
----
-
-<div align="center">
-  <img src="../assets/img/step1.png">
-</div>
-
----
-
-# Stroop task
-
-1. Create a new folder 'stroop' on your desktop
-2. Launch Pyschopy2/Open new builder window
-3. Select new keyboard response component
-4. <blue>Select new text stimuli component</blue>
-
----
-
-<div align="center">
-  <img src="../assets/img/text_response1.png">
-</div>
-
----
-
-<div align="center">
-  <img src="../assets/img/text_response2.png">
-</div>
-
----
-
-<div align="center">
-  <img src="../assets/img/step2.png">
-</div>
-
----
-
-# Stroop task
-
-1. Create a new folder 'stroop' on your desktop
-2. Launch Pyschopy2/Open new builder window
-3. Select new keyboard response component
-4. Select new text stimuli component
-5. <blue>Create condition file</blue>
-    - Open excel (or text editor)
-    - Create 'text' column
-    - Create 'color' column
-    - Create 'corrAns' column
-    - Create 'congruent' column
-
----
-
-</br>
-
-<div align="center">
-  <img src="../assets/img/cf_excel1.png">
-  <img src="../assets/img/cf_texted1.png">
-</div>
-
----
-
-</br> 
-
-<div align="center">
-  <img src="../assets/img/cf_excel2.png">
-  <img src="../assets/img/cf_texted2.png">
-</div>
-
----
-
-# Stroop task
-
-1. Create a new folder 'stroop' on your desktop
-2. Launch Pyschopy2/Open new builder window
-3. Select new keyboard response component
-4. Select new text stimuli component
-5. Create condition file
-6. <blue>Save condition file in 'stroop' folder, create loop</blue>
-
----
-
-</br>
-
-<div align="center">
-  <img src="../assets/img/loop1.png">
-</div>
-
----
-
-<div align="center">
-  <img src="../assets/img/loop2.png">
-</div>
-
----
-
-<div align="center">
-  <img src="../assets/img/loop3.png">
-</div>
-
----
-
-# Stroop task
-
-<div style="float: right">
-  <img src="../assets/img/run.png">
-</div>
-
-1. Create a new folder 'stroop' on your desktop
-2. Launch Pyschopy2/Open new builder window
-3. Select new keyboard response component
-4. Select new text stimuli component
-5. Create condition file
-6. Save condition file in 'stroop' folder, create loop
-7. <blue>Run experiment</blue>
-
---
-
-- You made an awesome experiment, collected data... now what?
+# You made an awesome experiment, collected data... now what?
 
 ---
 
@@ -664,58 +822,6 @@ class: inverse, middle, center
 
 - Specify the output format
 - Import results directly into stats program
-
-```{r}
-# Combine files vertically into large data frame
-temp <- list.files(path = "../demos/3_stroop/data", 
-    full.names = TRUE, pattern = ".csv")
-myfiles <- lapply(temp, read.csv,sep = ",")
-df <- do.call("rbind",myfiles)
-```
-
----
-
-# Plots
-
-```{r, echo=FALSE, fig.align='center', fig.width=11, fig.height=6, fig.retina=2}
-# plot rt as a function of text
-par(mfrow=c(1,2))
-# get descriptive statistics of subsets of factors
-prop <- aggregate(resp.corr ~ letterColor, data = df, FUN = mean)
-p <- with(prop, barplot(resp.corr, ylim = c(0,1), ylab = "Proportion of correct responses", xlab = "Colors",
-    col=c("red","green", "blue")))
-axis(1, at=p, labels=prop$letterColor)
-with(df, plot(log(resp.rt)~letterColor, ylab = "log(RT)", xlab = "Colors", 
-    col=c("red","green", "blue")))
-```
-
----
-
-# Plots
-
-```{r, echo=FALSE, fig.align='center', fig.width=11, fig.retina=2}
-par(mfrow=c(1,1))
-mod2 <- lm(log10(resp.rt) ~ participant, data = df)
-with(df, plot(participant, log10(resp.rt), ylab = "log10(RT)", xlab = "Trials", 
-    col = rgb(0, 0, 204, 102, maxColorValue = 255), main = "Reaction time as a function of trial"))
-axis(1, at=c(1:10))
-abline(mod2, col = "red")
-```
-
----
-
-# Statistics
-
-```{r, echo=TRUE, eval=FALSE}
-lm(log10(resp.rt) ~ participant, data = df)
-```
-
-```{r, echo=FALSE, results='asis', message = FALSE}
-library(stargazer); library(xtable)
-#stargazer(mod2, type = 'html', align = FALSE, no.space=TRUE, 
-#    single.row=TRUE, omit.stat=c("LL","ser", "rsq"))
-print(xtable(mod2), type = 'html')
-```
 
 ---
 
@@ -750,7 +856,7 @@ print(xtable(mod2), type = 'html')
 
 # More resources
 
-- http://www.jvcasillas.com/teaching/psychopy/
+- http://www.jvcasillas.com/psychopy_ws/
 - http://www.psychopy.org/ 
 - http://code.google.com/p/psychopy/ 
 - http://www.youtube.com/watch?v=VV6qhuQgsiI
