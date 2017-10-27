@@ -799,17 +799,107 @@ background-position: 5% 50%, 95% 50%
 <img width="400" src="../assets/img/psy/22.png">
 </div>
 
+---
 
+# What did we learn?
 
+- We can display as many items as we want using routines
 
+- The most efficient way to do this is to create a **condition file** and <blue>loop</blue> through the items
 
+- We can refer to the variables (column names) of our condition file in components using **$** (i.e., $item)
 
+- Whenever we use a loop we must change the variable in question to *set every repeat*
 
+---
 
+# Results
 
+- Look inside your **myexp** folder for a new folder called "data"
 
+- You should see several log files and .csv files
 
+<div align="center">
+<img width="700" src="../assets/img/psy/23.png">
+</div>
 
+---
+background-image: url(../assets/img/psy/24.png)
+background-size: contain
+
+- The experiment output is a .csv file that contains all of our variables in the condition file
+
+- The log files are good for troubleshooting, but in general you can ignore them
+
+- **Note**: the output is a tidy data frame i.e., each column is a variable and every row is a trial
+
+- This is the optimal format for our data for visualization and analysis (in R, for example)
+
+---
+
+# Final touches
+
+### Adding instructions
+
+- It is usually necessary to give our participants instructions so they understand the task 
+
+- Let's include a new routine before our loop
+
+- What components do we need?
+
+--
+
+- Add a **text component** to display the instructions and a **key response component** to begin the experiment
+
+---
+background-image: url(../assets/img/psy/25.png)
+background-size: contain
+class: inverse
+
+---
+background-image: url(../assets/img/psy/26.png)
+background-size: contain
+class: inverse
+
+---
+background-image: url(../assets/img/psy/27.png)
+background-size: contain
+class: inverse
+
+---
+background-image: url(../assets/img/psy/28a.png)
+background-size: contain
+class: inverse
+
+---
+background-image: url(../assets/img/psy/28b.png)
+background-size: contain
+class: inverse
+
+---
+
+# Optional
+
+### Say thank you to your participants 
+
+- Create an "end" routine after the loop
+
+- What components do you need?
+
+---
+background-image: url(../assets/img/psy/29a.png)
+background-size: contain
+class: inverse
+
+---
+background-image: url(../assets/img/psy/29b.png)
+background-size: contain
+class: inverse
+
+---
+background-image: url(../assets/img/psy/30.png)
+background-size: contain
+class: inverse
 
 ---
 class: inverse, middle, center
@@ -822,6 +912,19 @@ class: inverse, middle, center
 
 - Specify the output format
 - Import results directly into stats program
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
