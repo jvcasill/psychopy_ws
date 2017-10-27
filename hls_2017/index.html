@@ -914,15 +914,6 @@ class: inverse, middle, center
 
 
 
-```r
-# Combine files vertically into large data frame
-temp &lt;- list.files(path = "../demos/3_stroop/data", 
-    full.names = TRUE, pattern = ".csv")
-myfiles &lt;- lapply(temp, read.csv,sep = ",")
-df &lt;- do.call("rbind",myfiles)
-```
-
-
 
 
 
