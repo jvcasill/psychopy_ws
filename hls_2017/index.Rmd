@@ -2,7 +2,7 @@
 title: "Best practices and tools for pycholinguistic research with bilinguals:"
 subtitle: "A gentle introduction to PsychoPy2"
 author: "Joseph V. Casillas, PhD | Rutgers University"
-date: "Hispanic Linguistics Symposium - Lubbock, TX </br> 10/26/2017"
+date: "Hispanic Linguistics Symposium - Lubbock, TX </br> 10/27/2017"
 output:
   xaringan::moon_reader:
     lib_dir: assets
