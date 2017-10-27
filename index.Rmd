@@ -1,0 +1,15 @@
+---
+title: "PsychoPy workshops"
+author: "Joseph V. Casillas"
+date: "Last updated: `r Sys.Date()`"
+output: 
+  html_document: 
+    theme: yeti
+---
+
+
+- [Slides](http://www.jvcasillas.com/psychopy_ws/hls_2017/index.html)
+- [OSF repository](https://osf.io/g6dcu/)
+- [Github repository](https://github.com/jvcasillas/psychopy_templates)
+
+Previous workshops will be uploaded soon.
