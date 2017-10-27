@@ -71,7 +71,7 @@ background-position: 100% 50%
 - Where and how do you get it?
 - What is psychopy good for?
 - What is psychopy not good for?
-- Demo: stroop task
+- Demo: 2AFC GJ task
 - Bonus:
   - integration with R, project management
   - OSF, templates and reproducible research
@@ -101,6 +101,26 @@ class: right
 - What are they?
 - Why are they important to me?
 - What do I need to know/do?
+
+---
+
+# Bilingual language modes
+
+&gt;[...] state of activation of the bilingual's languages and language processing 
+&gt;mechanisms at a given point in time (Grosjean, 2002)
+
+&lt;/br&gt;
+
+--
+
+- Bilinguals communicate differently when they are with monolinguals and when they are  with bilinguals who share their languages (Grosjean, 2012)
+
+- Activation of languages increases/decreases as a function of communicative setting
+  - Bilingual mode: both languages activated 
+  - Unilingual mode: one language activated
+
+- Cross-language interactions strengthened in bilingual settings (Olson, 2013; Simonet, 2014)
+
 
 ---
 
@@ -136,18 +156,28 @@ class: right
 
 # Language proficiency
 
-### The basics
+### Summary
 
-- What is it?
-- Why do I care?
-- What do I need to know/do?
+- We often need an assessment of language proficiency when dealing with learners
+- They are usually used to dichotomize groups, but can also be used as continuous measures
 
 ### Options
 
 - LexTALE
 - DELE
+- Speech rate
+- ...and many more
+
+--
+
+**Pick one and prepare to defend it**
+
+- I will show you how they can be integrated into your workflow with PsychoPy to save you time 
+and automate analysis
 
 ---
+background-image: url(../assets/img/bilingualCont.png)
+background-size: contain
 background-color: black
 class: right
 
@@ -155,22 +185,49 @@ class: right
 
 ### ...and how to measure it
 
+&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;&lt;/br&gt;
+
+&lt;div align='center'&gt;
+  &lt;img width="10%" src="../assets/img/unicornio.gif"&gt;
+  &lt;img width="15" src="../assets/img/fill.png"&gt;
+&lt;/div&gt;
+
 ---
 
 # Language dominance
 
-### The basics
+### Summary
 
-- What is it?
-- Why is it important to me?
-- What do I need to know/do?
+- We often need an assessment of language dominance, especially when dealing with highly proficient bilinguals
+- They are usually used to dichotomize groups, but can also be used as continuous measures
 
 ### Options
 
-- BLP
-- Multi-Lingual Naming Test MINT
+- Bilingual Language Profile (BLP)
+- Multi-Lingual Naming Test (MINT)
+- ???
+
+--
+
+**Pick one and try to decide if it really measures dominance**
+
+- Again, we can present these tasks using PsychoPy to save time 
+and automate analysis
 
 ---
+
+# Big picture
+
+- There are many important factors to keep in mind when conducting research on bilinguals
+
+- I have only mentioned a few
+
+- We can use Psychopy to help us be more efficient, to automate our workflow and to make our research more reproducible
+
+---
+
+
+
 
 
 
@@ -275,9 +332,17 @@ class: center, middle
 - What is it? 
 - How does it work?
 
+--
+
 ### Why you should care
 
+- Save time
+- Learn programming?
+--
+
 - Gain better understanding of psycholinguistic experiments
+
+--
 
 ### What will you learn?
 
@@ -307,6 +372,7 @@ class: inverse, middle, center
 - It's free!
 - It's cross-platform
 - It has a GUI (builder mode) or you can write in code
+- It is efficient and integrates well with R
 
 ---
 
@@ -314,14 +380,16 @@ class: inverse, middle, center
 
 ### What is it good for?
 
-- PsychoPy2 can be used to create psycholinguistic tasks: 
+- PsychoPy2 can be used to create common psycholinguistic tasks: 
     - 2AFC
     - AX, AXB, ABX
     - Lexical decision (masked prime)
-    - Production experiments
-    - Pretty much anything you can design
-
-&lt;/br&gt;
+    - Etc.
+- It can be used for production experiments
+- It interfaces with most hardware
+    - Eye-trackers
+    - Button boxes
+- You can design pretty much anything you can think of
 
 --
 
@@ -389,7 +457,7 @@ be grammatical.
 
 --
 
-- Participants will see the sentences on the screen and decide if they are grammatically correct of incorrect.
+- Participants will see the sentences on the screen and decide if they are grammatically correct or incorrect.
 
 --
 
@@ -631,7 +699,7 @@ background-color: grey
 
 3. We control *how long* they last and *what* they record 
 
-4. There are many response possible components (i.e., keyboards, button boxes, microphones, mouse clicks, etc.)
+4. There are many possible response components (i.e., keyboards, button boxes, microphones, mouse clicks, etc.)
 
 --
 
@@ -803,7 +871,7 @@ background-position: 5% 50%, 95% 50%
 
 - We can display as many items as we want using routines
 
-- The most efficient way to do this is to create a **condition file** and &lt;blue&gt;loop&lt;/blue&gt; through the items
+- The most efficient way to do this is to create a **condition file** and &lt;blue&gt;loop&lt;/blue&gt; through our items
 
 - We can refer to the variables (column names) of our condition file in components using **$** (i.e., $item)
 
@@ -969,11 +1037,33 @@ class: inverse, middle, center
 
 - Specify the output format
 - Import results directly into stats program
+- Never open excel again!
+--
+
+- You already know the variables of your dataframe so you can program your statistical analysis before you even collect data!
+
+&lt;div align="center"&gt;
+&lt;img width="800" src="../assets/img/rsnippet.png"&gt;
+&lt;/div&gt;
 
 ---
 class: inverse, middle, center
 
 # Getting help...
+
+---
+
+# Getting help
+
+### (Slightly more) advanced topics
+
+- Blocks of trials
+
+- Counter balancing
+
+- Bilingual experiments
+
+### **See OSF templates**
 
 ---
 
