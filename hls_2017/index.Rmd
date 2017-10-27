@@ -600,7 +600,7 @@ background-position: 46.5% 28.5%
 
 <div>
   <img width="300" src="../assets/img/psy/10a.png">
-  <img width="100" src="../assets/img/hfill.png">
+  <img width="100" src="../assets/img/fill.png">
   <img width="300" src="../assets/img/psy/11a.png">
 </div>
 
@@ -609,7 +609,7 @@ class: middle, center
 
 <div>
   <img width="450" src="../assets/img/psy/10b.png">
-  <img width="100" src="../assets/img/hfill.png">
+  <img width="100" src="../assets/img/fill.png">
   <img width="450" src="../assets/img/psy/11b.png">
 </div>
 
@@ -655,7 +655,7 @@ background-color: grey
 
 <div>
   <img width="450" src="../assets/img/psy/15a.png">
-  <img width="100" src="../assets/img/hfill.png">
+  <img width="100" src="../assets/img/fill.png">
   <img width="450" src="../assets/img/psy/15c.png">
 </div>
 
@@ -663,7 +663,7 @@ background-color: grey
 
 <div>
   <img width="450" src="../assets/img/psy/15a.png">
-  <img width="100" src="../assets/img/hfill.png">
+  <img width="100" src="../assets/img/fill.png">
   <img width="450" src="../assets/img/psy/15c.png">
 </div>
 
@@ -682,7 +682,7 @@ background-color: grey
 
 <div>
   <img width="450" src="../assets/img/psy/15b.png">
-  <img width="100" src="../assets/img/hfill.png">
+  <img width="100" src="../assets/img/fill.png">
   <img width="450" src="../assets/img/psy/15d.png">
 </div>
 
@@ -733,7 +733,7 @@ class: middle
 
 <div align="center">
   <img width="400" src="../assets/img/psy/19a.png">
-  <img width="100" src="../assets/img/hfill.png">
+  <img width="100" src="../assets/img/fill.png">
   <img width="400" src="../assets/img/psy/19b.png">
 </div>
 
@@ -757,7 +757,7 @@ class: middle
 
 <div align="center">
   <img width="400" src="../assets/img/psy/20a.png">
-  <img width="100" src="../assets/img/hfill.png">
+  <img width="100" src="../assets/img/fill.png">
   <img width="400" src="../assets/img/psy/20b.png">
 </div>
 
