@@ -6,7 +6,7 @@ date: "Hispanic Linguistics Symposium - Lubbock, TX </br> 10/27/2017"
 output:
   xaringan::moon_reader:
     lib_dir: assets
-    css: ["http://www.jvcasillas.com/ru_xaringan/css/rutgers.css", "http://www.jvcasillas.com/ru_xaringan/css/rutgers-fonts.css"]
+    css: ["https://www.jvcasillas.com/ru_xaringan/css/rutgers.css", "https://www.jvcasillas.com/ru_xaringan/css/rutgers-fonts.css"]
     nature:
       highlightStyle: github
       highlightLines: true
